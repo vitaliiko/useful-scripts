@@ -1,7 +1,12 @@
+## Commands
+
 #### Port statistic
 sudo netstat -lpn | grep :8080
 
-### Aliases
+#### Go to the script's home directory
+cd ${0%/*} 
+
+## Aliases
 
 Add
 
