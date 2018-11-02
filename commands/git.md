@@ -1,6 +1,8 @@
 #### Remove all merged branches except current one
 git branch --merged | grep -v '*' | xargs git branch -D
 
+#### Use Sublime as a default editor
+git config --global core.editor "subl -n -w"
 
 ### Aliases
 
