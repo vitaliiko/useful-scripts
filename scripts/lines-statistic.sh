@@ -15,7 +15,7 @@ file_name=$1
 awk -F'[()]' '{print $2}' $file_name `# get text inside round brackets` \
     | grep -v -e '^$' `# remove empty lines` \
     | sort | uniq -c `# count occurrences of each unique line` \
-    | sort -r -g >> ${reportFile}
+    | sort -r -g
 
 # Output:
 # 
