@@ -13,6 +13,17 @@ docker-compose --version
 docker ps --filter "status=exited" | grep 'weeks ago' | awk '{print $1}' | xargs --no-run-if-empty docker rm  
 docker rmi $(docker images -f "dangling=true" -q)  
 
+#### Kill all running containers
+docker kill $(docker ps -q)
+
+#### Remove all stopped containers but do not delete volumes
+docker rm $(docker ps -aq)
+
+#### Run container and mount current folder to it
+docker run -it --rm -w /app -v $(pwd):/app image bash
+
+#### Get the IP for eth0 inside the container
+docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}"
 
 #### Uninstall Docker
 https://stackoverflow.com/questions/31313497/how-to-remove-docker-installed-using-wget  
