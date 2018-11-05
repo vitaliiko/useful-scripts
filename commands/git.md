@@ -1,10 +1,15 @@
 #### Remove all merged branches except current one
 git branch --merged | grep -v '*' | xargs git branch -D
 
+#### Move last N commits to a new branch
+git branch newbranch  
+git reset --hard HEAD~3  
+git checkout newbranch  
+
 #### Use Sublime as a default editor
 git config --global core.editor "subl -n -w"
 
-### Aliases
+#### Aliases
 
 git config --global alias.co checkout  
 git config --global alias.br branch  
