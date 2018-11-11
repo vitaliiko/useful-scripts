@@ -7,7 +7,6 @@ git reset --hard HEAD~3
 git checkout newbranch  
 
 #### Push to another branch
-
 git push origin branch1:branch2  
 git push <remote> <branch with new changes>:<branch you are pushing to>  
 
