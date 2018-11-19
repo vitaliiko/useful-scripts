@@ -11,6 +11,8 @@ docker-compose --version
 
 #### Remove old containers and images
 docker ps --filter "status=exited" | grep 'weeks ago' | awk '{print $1}' | xargs --no-run-if-empty docker rm  
+
+docker images | grep 'months ago' | awk '{print $3}' | xargs docker rmi
 docker rmi $(docker images -f "dangling=true" -q)  
 
 #### Kill all running containers
