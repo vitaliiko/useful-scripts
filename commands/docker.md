@@ -27,6 +27,17 @@ docker run -it --rm -w /app -v $(pwd):/app image bash
 #### Get the IP for eth0 inside the container
 docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}"
 
+#### Check size of containers
+docker ps -s
+
+#### See last logs
+docker logs --since 30s -f <container_name_or_id>
+or
+docker logs --tail 20 -f <container_name_or_id>
+
+#### Delete log of a container
+echo "" > $(docker inspect --format='{{.LogPath}}' <container_name_or_id>)
+
 #### Uninstall Docker
 https://stackoverflow.com/questions/31313497/how-to-remove-docker-installed-using-wget  
 
