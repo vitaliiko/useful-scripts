@@ -9,13 +9,15 @@ sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
 sudo apt install nvidia-390 nvidia-settings
 ```
-#### Install Docker and docker-compose
+#### Docker and docker-compose
 Use [the script](https://github.com/vitaliykobrin/useful-scripts/blob/master/scripts/install-docker.sh)
 
-#### Install Git
-```sudo apt install git```
+#### Git
+```
+sudo apt install git
+```
 
-#### Install Sublime Text
+#### Sublime Text
 ```
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
