@@ -28,5 +28,6 @@ git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --grap
 git config --global alias.last 'log -1 HEAD'  
 git config --global alias.who "shortlog -n -s --no-merges"  
   
+Add to `.gitconfig`  
 ri = "!ri() { git rebase -i HEAD~$1; }; ri"  
 la = "!git config -l | grep alias | cut -c 7-"  
