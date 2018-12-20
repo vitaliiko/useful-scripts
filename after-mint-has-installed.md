@@ -29,3 +29,8 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt-get update
 sudo apt-get install sublime-text
 ```
+#### Shutter
+```
+sudo add-apt-repository ppa:shutter/ppa
+sudo apt-get update && sudo apt-get install shutter
+```
