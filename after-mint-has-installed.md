@@ -5,6 +5,7 @@
 1. Shutter
 1. Slack
 1. MySQL Workbench
+1. Postman
 
 ### Packages to install
 #### NVIDIA drivers
