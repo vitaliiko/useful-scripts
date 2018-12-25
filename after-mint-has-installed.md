@@ -6,6 +6,7 @@
 1. Slack
 1. MySQL Workbench
 1. Postman
+1. [gnome-alsamixer](https://community.linuxmint.com/software/view/gnome-alsamixer)
 
 ### Packages to install
 #### NVIDIA drivers
