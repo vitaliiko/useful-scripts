@@ -7,6 +7,7 @@
 1. MySQL Workbench
 1. Postman
 1. [gnome-alsamixer](https://community.linuxmint.com/software/view/gnome-alsamixer)
+9. [ngrok](https://dashboard.ngrok.com/get-started)
 
 ### Packages to install
 #### NVIDIA drivers
