@@ -35,3 +35,6 @@ echo "" > $(docker inspect --format='{{.LogPath}}' <container_name_or_id>)
 #### Uninstall Docker
 https://stackoverflow.com/questions/31313497/how-to-remove-docker-installed-using-wget  
 
+#### Copy data between Docker container and host
+docker cp CONTAINER:SRC_PATH DEST_PATH
+docker cp SRC_PATH CONTAINER:DEST_PATH
