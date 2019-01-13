@@ -10,6 +10,9 @@ git checkout newbranch
 git push origin branch1:branch2  
 git push <remote> <branch with new changes>:<branch you are pushing to>  
 
+#### Count of commits by author
+git shortlog -s -n --all --no-merges
+
 #### Use Sublime as a default editor
 git config --global core.editor "subl -n -w"
 
