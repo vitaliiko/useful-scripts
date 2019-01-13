@@ -8,7 +8,7 @@ git checkout newbranch
 
 #### Push to another branch
 git push origin branch1:branch2  
-git push <remote> <branch with new changes>:<branch you are pushing to>  
+git push origin "branch with new changes":"branch you are pushing to"  
 
 #### Count of commits by author
 git shortlog -s -n --all --no-merges
