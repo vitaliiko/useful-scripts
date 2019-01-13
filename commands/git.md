@@ -13,6 +13,9 @@ git push origin "branch with new changes":"branch you are pushing to"
 #### Count of commits by author
 git shortlog -s -n --all --no-merges
 
+#### Get last commit hash (first 7 characters)
+git rev-parse HEAD | head -c 7
+
 #### Use Sublime as a default editor
 git config --global core.editor "subl -n -w"
 
