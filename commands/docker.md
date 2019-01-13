@@ -15,6 +15,9 @@ docker kill $(docker ps -q)
 #### Remove all stopped containers but do not delete volumes
 docker rm $(docker ps -aq)
 
+#### Remove all images of certain repository
+docker rmi $(docker images -q ubuntu)
+
 #### Run container and mount current folder to it
 docker run -it --rm -w /app -v $(pwd):/app image bash
 
