@@ -9,6 +9,9 @@ docker ps --filter "status=exited" | grep 'weeks ago' | awk '{print $1}' | xargs
 docker images | grep 'months ago' | awk '{print $3}' | xargs docker rmi
 docker rmi $(docker images -f "dangling=true" -q)  
 
+#### Remove images filtered by grep
+docker images | grep <word> | awk '{print $3}' | xargs docker rmi
+
 #### Kill all running containers
 docker kill $(docker ps -q)
 
@@ -41,3 +44,6 @@ https://stackoverflow.com/questions/31313497/how-to-remove-docker-installed-usin
 #### Copy data between Docker container and host
 docker cp CONTAINER:SRC_PATH DEST_PATH
 docker cp SRC_PATH CONTAINER:DEST_PATH
+
+#### Run ctop
+docker run --rm -ti --name=ctop -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest
