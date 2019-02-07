@@ -68,5 +68,9 @@ docker cp SRC_PATH CONTAINER:DEST_PATH
 docker run --rm -ti --name=ctop -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest
 ```
 
+#### Check size occupied by containers and their volumes
+
+Use [the script](https://github.com/vitaliykobrin/useful-scripts/blob/master/scripts/docker-size.sh)
+
 #### Uninstall Docker
 https://stackoverflow.com/questions/31313497/how-to-remove-docker-installed-using-wget  
