@@ -3,16 +3,22 @@
 Use [the script](https://github.com/vitaliykobrin/useful-scripts/blob/master/scripts/install-docker.sh)
 
 
-#### Remove old containers and images
+#### Remove old containers, images and unused volumes
 ```
 docker ps --filter "status=exited" | grep 'weeks ago' | awk '{print $1}' | xargs --no-run-if-empty docker rm  
 docker images | grep 'months ago' | awk '{print $3}' | xargs docker rmi
 docker rmi $(docker images -f "dangling=true" -q)  
+docker volume prune
 ```
 
 #### Remove images filtered by grep
 ```
 docker images | grep <word> | awk '{print $3}' | xargs docker rmi
+```
+
+#### Remove containers filtered by grep
+```
+docker ps -a | grep <word> | awk '{print $1}' | xargs docker rm
 ```
 
 #### Kill all running containers
