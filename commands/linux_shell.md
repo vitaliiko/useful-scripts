@@ -10,7 +10,7 @@ sudo netstat -lpn | grep :8080
 cd ${0%/*} 
 ```
 
-#### Replace spaces if names of multiple files or directories
+#### Replace spaces with underscore in names of multiple files or directories
 ```
 find -name "* *" -type d | rename 's/ /_/g'
 find -name "* *" -type f | rename 's/ /_/g'
