@@ -38,6 +38,12 @@ rsync -rv -e "ssh -l user" --exclude 'node_modules' --exclude '*.log' ./folder i
 cat input.txt | grep <expression> | awk -F'[""]' '{print "prefix" $4}' >> output.txt
 ```
 
+#### Convert multiple lines into single line
+```
+cat input.txt | awk -F'[/]' '{print $1}' ORS="," > output.txt
+```
+
+
 ## Aliases
 
 Add
