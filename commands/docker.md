@@ -41,7 +41,7 @@ docker rmi $(docker images -q ubuntu)
 docker run -it --rm -w /app -v $(pwd):/app image bash
 ```
 
-#### Get the IP for eth0 inside the container
+#### Get the IP of eth0 inside the container
 ```
 docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}"
 ```
