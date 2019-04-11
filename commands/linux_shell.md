@@ -43,6 +43,10 @@ cat input.txt | grep <expression> | awk -F'[""]' '{print "prefix" $4}' >> output
 cat input.txt | awk -F'[/]' '{print $1}' ORS="," > output.txt
 ```
 
+#### Merge files line-by-line
+```
+paste file1.txt file2.txt > fileresults.txt
+```
 
 ## Aliases
 
