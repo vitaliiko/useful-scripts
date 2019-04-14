@@ -3,11 +3,23 @@
 Use [the script](https://github.com/vitaliykobrin/useful-scripts/blob/master/scripts/install-docker.sh)
 
 
-#### Remove old containers, images and unused volumes
+#### Remove old non-running containers
 ```
 docker ps --filter "status=exited" | grep 'weeks ago' | awk '{print $1}' | xargs --no-run-if-empty docker rm  
+```
+
+#### Remove old not bound with containers images
+```
 docker images | grep 'months ago' | awk '{print $3}' | xargs docker rmi
+```
+
+#### Remove dangling images
+```
 docker rmi $(docker images -f "dangling=true" -q)  
+```
+
+#### Remove non-used images
+```
 docker volume prune
 ```
 
@@ -75,7 +87,6 @@ docker run --rm -ti --name=ctop -v /var/run/docker.sock:/var/run/docker.sock qua
 ```
 
 #### Check size occupied by containers and their volumes
-
 Use [the script](https://github.com/vitaliykobrin/useful-scripts/blob/master/scripts/docker-size.sh)
 
 #### Uninstall Docker
