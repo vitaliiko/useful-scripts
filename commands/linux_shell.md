@@ -16,11 +16,6 @@ find -name "* *" -type d | rename 's/ /_/g'
 find -name "* *" -type f | rename 's/ /_/g'
 ```
 
-#### Merge several files into one
-```
-awk 'FNR==1{print ""}{print}' *.xml > result.xml
-```
-
 #### Copy file with scp
 ```
 scp input.txt user@ip_adress:/home/user
@@ -31,35 +26,29 @@ scp input.txt user@ip_adress:/home/user
 rsync -rv -e "ssh -l user" --exclude 'node_modules' --exclude '*.log' ./folder ip_adress:/home/user
 ```
 
+#### Get current date in a certain format
+```
+date '+%Y-%m-%d %H:%M:%S'
+```
+
 ### File conversion
-
-#### Get all items between double quotes and write them with prefix to another file
-```
-cat input.txt | grep <expression> | awk -F'[""]' '{print "prefix" $4}' >> output.txt
-```
-
-#### Convert multiple lines into single line
-```
-cat input.txt | awk -F'[/]' '{print $1}' ORS="," > output.txt
-```
 
 #### Merge files line-by-line
 ```
 paste file1.txt file2.txt > fileresults.txt
 ```
 
-## Aliases
-
-Add
-
+#### Write line to a file
 ```
-if [ -f ~/.bash_aliases ]; then
-. ~/.bash_aliases
-fi
+echo line > $file_name
 ```
 
-into `.bashrc` and perform `source ~/.bashrc` after each edit of `.bash_aliases`
-
+#### Append line to a file
 ```
-alias dc='docker-compose'
+echo line >> $file_name
+```
+
+#### Use scp with password in a script
+```
+sshpass -p $password scp $source $destination
 ```

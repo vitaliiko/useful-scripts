@@ -13,6 +13,11 @@ sed '1d' $filename > $new_filename
 sed -i '$ d' $filename
 ```
 
+#### Remove first and last lines of a file at once
+```
+sed -i '1d;$d' $filename
+```
+
 #### Replace string with the other one
 ```
 sed -i s/string_to_replace/new_string/g file.txt

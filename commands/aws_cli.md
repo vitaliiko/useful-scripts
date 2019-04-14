@@ -11,5 +11,5 @@ aws s3api head-object --bucket ${bucket_name} --key ${object_name} | grep LastMo
 ```
 or
 ```
-$(aws s3 ls s3://bucket_name | grep ${object_name}) | awk '{print $1" "$2}'
+$(aws s3 ls s3://${bucket_name} | grep ${object_name}) | awk '{print $1" "$2}'
 ```
