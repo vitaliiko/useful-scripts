@@ -2,3 +2,9 @@
 ```
 grep -r "word" . --include=*.txt
 ```
+
+#### Exclude lines matched expression
+```
+cat $FILE_NAME | grep -v "word"
+```
+
