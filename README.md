@@ -12,3 +12,7 @@ alias help-shell='cat ~/projects/useful-scripts/commands/linux_shell.md'
 alias help-mysql='cat ~/projects/useful-scripts/commands/mysql.md'  
 alias help-sed='cat ~/projects/useful-scripts/commands/sed.md'  
 ```
+
+### TODO
+-  [ ] curl, wget
+-  [ ] gzip, tar, bzip2 ...
