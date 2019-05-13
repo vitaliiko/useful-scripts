@@ -86,6 +86,11 @@ docker cp SRC_PATH CONTAINER:DEST_PATH
 docker run --rm -ti --name=ctop -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest
 ```
 
+#### Mount SSH Keys into a Docker Container
+```
+docker run --rm -it -v ~/.ssh:/root/.ssh:ro alpine
+```
+
 #### Check size occupied by containers and their volumes
 Use [the script](https://github.com/vitaliykobrin/useful-scripts/blob/master/scripts/docker-size.sh)
 
