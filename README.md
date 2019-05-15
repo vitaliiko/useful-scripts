@@ -19,7 +19,9 @@ alias help-sed='cat ~/projects/useful-scripts/commands/sed.md'
 -  [ ] https://willnorris.com/go/imageproxy
 -  [ ] Add flex-box
 -  [ ] Add Best practices
-
+-  [ ] Add Elasticsearch
+-  [ ] Add Logstash
+-  [ ] Rename to handbook 
 
 #### Best practices
 
