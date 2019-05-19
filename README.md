@@ -16,3 +16,14 @@ alias help-sed='cat ~/projects/useful-scripts/commands/sed.md'
 ### TODO
 -  [ ] curl, wget
 -  [ ] gzip, tar, bzip2 ...
+-  [ ] netcat
+-  [ ] https://willnorris.com/go/imageproxy
+-  [ ] Add flex-box
+-  [ ] Add Best practices
+-  [ ] Add Elasticsearch
+-  [ ] Add Logstash
+-  [ ] Rename to handbook 
+
+#### Best practices
+
+Investigate API of libraries somebody used in a project
