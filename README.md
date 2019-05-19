@@ -14,7 +14,6 @@ alias help-sed='cat ~/projects/useful-scripts/commands/sed.md'
 ```
 
 ### TODO
--  [ ] curl, wget
 -  [ ] gzip, tar, bzip2 ...
 -  [ ] netcat
 -  [ ] https://willnorris.com/go/imageproxy
