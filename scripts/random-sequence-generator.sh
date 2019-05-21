@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Usage: ./random-sequence-generator.sh 16 a-zA-Z0-9-_"
+
 string_length=${1:-64}
 character_set=${2:-'a-zA-Z0-9-_'}
  
