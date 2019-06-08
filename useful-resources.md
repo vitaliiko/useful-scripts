@@ -1,3 +1,3 @@
 ### Usefull resources
 
-* (Crontab validator)[https://crontab.guru/]
+* [Crontab validator](https://crontab.guru/)
