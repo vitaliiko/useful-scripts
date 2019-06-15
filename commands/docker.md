@@ -70,6 +70,11 @@ or
 docker logs --tail 20 -f <container_name_or_id>
 ```
 
+#### Find container log file
+```
+docker inspect --format='{{.LogPath}}' container
+```
+
 #### Delete log of a container
 ```
 echo "" > $(docker inspect --format='{{.LogPath}}' <container_name_or_id>)

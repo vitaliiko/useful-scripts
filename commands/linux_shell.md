@@ -52,3 +52,8 @@ echo line >> $file_name
 ```
 sshpass -p $password scp $source $destination
 ```
+
+#### Merge files line by line and separate by semicolon
+```
+paste -d ';' file1.txt file2.txt > merge.txt
+```

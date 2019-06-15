@@ -18,6 +18,11 @@ sed -i '$ d' $filename
 sed -i '1d;$d' $filename
 ```
 
+#### Replace occuranses of a string
+```
+sed s/"string_to_replace"//g file.txt
+```
+
 #### Replace string with the other one
 ```
 sed -i s/string_to_replace/new_string/g file.txt
