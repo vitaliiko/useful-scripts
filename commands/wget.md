@@ -17,7 +17,7 @@ wget -i filename.txt
 ```
 wget --force-html -i filename.html
 ```
-Add `<base href="/support/knowledge_base/">` in liks are relative
+Add `<base href="/support/knowledge_base/">` if liks are relative
 
 #### Limit download speed 
 ```
