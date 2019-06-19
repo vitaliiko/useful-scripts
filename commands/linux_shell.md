@@ -57,3 +57,20 @@ sshpass -p $password scp $source $destination
 ```
 paste -d ';' file1.txt file2.txt > merge.txt
 ```
+
+#### Get uniq set of lines
+```
+<input> | sort | uniq
+or 
+<input> | sort -u
+```
+
+#### Sort lines of numbers in reverse order
+```
+<input> | sort -rn
+```
+
+#### Kill all processes with a certain name
+```
+ps aux | awk '/<app>/ {print $2}' | xargs kill
+```
