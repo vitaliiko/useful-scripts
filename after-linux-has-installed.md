@@ -2,6 +2,7 @@
 1. Chrome
 1. RescueTime
 1. [Krusader](https://community.linuxmint.com/software/view/krusader)
+1. Telegram
 1. Slack
 1. Skype
 1. Intellij IDEA
