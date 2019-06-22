@@ -3,6 +3,9 @@
 1. RescueTime
 1. [Krusader](https://community.linuxmint.com/software/view/krusader)
 1. Slack
+1. Skype
+1. Intellij IDEA
+1. WebStorm
 1. MySQL Workbench
 1. [SQL Workbench](https://www.sql-workbench.eu/downloads.html)
 1. Postman
