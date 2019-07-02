@@ -17,6 +17,7 @@ alias help-sed='cat ~/projects/useful-scripts/commands/sed.md'
 -  [ ] alias for add certain file(s) to git and commit by one command
 -  [x] gzip, tar, bzip2 ...
 -  [ ] netcat
+-  [ ] https://stedolan.github.io/jq/
 -  [ ] https://willnorris.com/go/imageproxy
 -  [ ] Add flex-box
 -  [ ] Add Best practices
