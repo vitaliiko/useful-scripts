@@ -12,6 +12,7 @@
 1. Postman
 1. [gnome-alsamixer](https://community.linuxmint.com/software/view/gnome-alsamixer)
 1. [ngrok](https://dashboard.ngrok.com/get-started)
+1. [HeidiSQL](https://www.heidisql.com/download.php)
 
 ### Packages to install
 #### NVIDIA drivers
@@ -52,4 +53,13 @@ sudo chmod +x /usr/local/bin/ctop
 #### [jq](https://stedolan.github.io/jq/)
 ```
 sudo apt-get install jq
+```
+
+#### [Wine](https://computingforgeeks.com/how-to-install-wine-4-on-ubuntu-18-04-linux-mint-19/)
+```
+sudo dpkg --add-architecture i386 
+wget -qO - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
+sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+sudo apt-get update
+sudo apt install --install-recommends winehq-stable
 ```
