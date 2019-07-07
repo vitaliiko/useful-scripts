@@ -63,3 +63,11 @@ sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic ma
 sudo apt-get update
 sudo apt install --install-recommends winehq-stable
 ```
+
+#### CodeShip CLI
+```
+curl -SLO "https://s3.amazonaws.com/codeship-jet-releases/2.11.0/jet-linux_amd64_2.11.0.tar.gz"
+sudo tar -xaC /usr/local/bin -f jet-linux_amd64_2.11.0.tar.gz
+sudo chmod +x /usr/local/bin/jet
+
+```
