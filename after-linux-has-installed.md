@@ -13,6 +13,7 @@
 1. [gnome-alsamixer](https://community.linuxmint.com/software/view/gnome-alsamixer)
 1. [ngrok](https://dashboard.ngrok.com/get-started)
 1. [HeidiSQL](https://www.heidisql.com/download.php)
+1. [Peek](https://mintguide.org/tools/682-peek-simple-animated-gif-screen-recorder.html)
 
 ### Packages to install
 #### NVIDIA drivers
