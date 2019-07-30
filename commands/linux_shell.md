@@ -74,3 +74,13 @@ or
 ```
 ps aux | awk '/<app>/ {print $2}' | xargs kill
 ```
+
+#### Split file by multiple ones
+```
+split --additional-suffix=<suffix> --numeric-suffixes -n <count_of_files> <file_name> <output_file_prefix>
+```
+
+#### Split file by multiple ones with a sertain lines count
+```
+split --additional-suffix=<suffix> --numeric-suffixes -l <lines_count> <file_name> <output_file_prefix>
+```
