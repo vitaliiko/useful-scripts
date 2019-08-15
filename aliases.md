@@ -25,6 +25,7 @@ git config --global alias.cm commit
 git config --global alias.st status  
   
 git config --global alias.ll "log --oneline --decorate" 
+git config --global alias.po "push origin"  
 git config --global alias.pos "pull origin staging"  
 git config --global alias.amend "commit --amend"  
 git config --global alias.append "commit --amend --no-edit"  
