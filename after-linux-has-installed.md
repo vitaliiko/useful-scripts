@@ -70,5 +70,12 @@ sudo apt install --install-recommends winehq-stable
 curl -SLO "https://s3.amazonaws.com/codeship-jet-releases/2.11.0/jet-linux_amd64_2.11.0.tar.gz"
 sudo tar -xaC /usr/local/bin -f jet-linux_amd64_2.11.0.tar.gz
 sudo chmod +x /usr/local/bin/jet
+```
 
+#### Enpass
+```
+echo "deb https://apt.enpass.io/ stable main" > /etc/apt/sources.list.d/enpass.list
+wget -O - https://apt.enpass.io/keys/enpass-linux.key | apt-key add -
+apt-get update
+apt-get install enpass
 ```
