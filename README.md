@@ -24,6 +24,7 @@ alias help-sed='cat ~/projects/useful-scripts/commands/sed.md'
 -  [ ] Add Elasticsearch
 -  [ ] Add Logstash
 -  [ ] Rename to handbook 
+-  [ ] sed http://www.theunixschool.com/2014/08/sed-examples-remove-delete-chars-from-line-file.html
 
 #### Best practices
 
