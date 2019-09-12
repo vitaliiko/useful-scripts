@@ -89,3 +89,8 @@ split --additional-suffix=<suffix> --numeric-suffixes -l <lines_count> <file_nam
 ```
 split --additional-suffix=.csv --numeric-suffixes -C 999000 <file_name>.csv <output_file_prefix>
 ```
+
+#### Replace first work in each line
+```
+<input> | awk '{$1 = ""; print $0}' | sed 's/^ //g'
+```
