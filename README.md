@@ -14,6 +14,7 @@ alias help-sed='cat ~/projects/useful-scripts/commands/sed.md'
 ```
 
 ### TODO
+-  [ ] add script to generate aliases for files with commands
 -  [ ] alias for add certain file(s) to git and commit by one command
 -  [x] gzip, tar, bzip2 ...
 -  [ ] netcat
