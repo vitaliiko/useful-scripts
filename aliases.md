@@ -14,6 +14,7 @@ into `.bashrc` and perform `source ~/.bashrc` after each edit of `.bash_aliases`
 
 ```
 alias dc='docker-compose'
+alias tempo='git add . && git commit -m "Tempo commit"'  
 ```
 
 
@@ -32,6 +33,7 @@ git config --global alias.append "commit --amend --no-edit"
 git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"  
 git config --global alias.last 'log -1 HEAD'  
 git config --global alias.who "shortlog -n -s --no-merges"  
+git config --global alias.undo "reset HEAD~1"  
 ```  
 Add to `.gitconfig`  
 ```
