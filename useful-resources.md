@@ -7,3 +7,4 @@
 * [base64 encoder/decoder](http://www.utilities-online.info/base64/#.XXjdmnUzZhE)
 * [Image compressor](https://compressor.io/)
 * [Whereby](https://whereby.com/) - Free video calls
+* [Flaticon](https://www.flaticon.com/) - Almost free icons
