@@ -32,3 +32,8 @@ sed -i s/string_to_replace/new_string/g file.txt
 ```
 sed -i s,placeholder,http://example.com,g file.txt
 ```
+
+#### Append each line with a string ignoring empty lines
+```
+sed -r '/^\s*$/d' file.txt | sed 's/^/string/' > result.txt
+```
