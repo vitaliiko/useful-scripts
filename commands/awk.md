@@ -49,3 +49,7 @@ awk 'FNR==1{print ""}{print}' *.xml > result.xml
 ```
 <input> | awk 'length > 0 {print length, $0}' | sort -n
 ```
+
+#### Replace first word in each line
+```
+<input> | awk '{$1 = ""; print $0}' | sed 's/^ //g'
