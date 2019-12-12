@@ -6,6 +6,7 @@
 * [Date-Timestamp convertor](https://www.freeformatter.com/epoch-timestamp-to-date-converter.html)
 * [base64 encoder/decoder](http://www.utilities-online.info/base64/#.XXjdmnUzZhE)
 * [Image compressor](https://compressor.io/)
+* [Image compressor 2](https://imagecompressor.com/)
 * [Whereby](https://whereby.com/) - Free video calls
 * [Flaticon](https://www.flaticon.com/) - Almost free icons
 * [Duplicity](http://duplicity.nongnu.org/index.html) - Encrypted bandwidth-efficient backup using the rsync algorithm
