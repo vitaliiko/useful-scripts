@@ -10,5 +10,5 @@
 * [Whereby](https://whereby.com/) - Free video calls
 * [Flaticon](https://www.flaticon.com/) - Almost free icons
 * [Duplicity](http://duplicity.nongnu.org/index.html) - Encrypted bandwidth-efficient backup using the rsync algorithm
-
+* [Localstack](https://github.com/localstack/localstack) - A fully functional local AWS cloud stack
 
