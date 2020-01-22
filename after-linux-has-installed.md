@@ -44,7 +44,7 @@ sudo apt-get install sublime-text
 sudo add-apt-repository ppa:shutter/ppa
 sudo apt-get update && sudo apt-get install shutter
 ```
-Install [plugins for Shutter](https://itsfoss.com/shutter-edit-button-disabled/)
+Install [plugins for Shutter](https://itsfoss.com/shutter-edit-button-disabled/) ([Copy of the page](https://github.com/vitaliykobrin/useful-scripts/blob/master/saved_pages/How%20To%20Fix%20Disabled%20Edit%20Option%20In%20Shutter%20in%20Ubuntu%2018.04%20%26%20Mint%2019.pdf))
 
 #### [ctop](https://github.com/bcicen/ctop)
 ```
