@@ -44,6 +44,7 @@ sudo apt-get install sublime-text
 sudo add-apt-repository ppa:shutter/ppa
 sudo apt-get update && sudo apt-get install shutter
 ```
+Install [plugins for Shutter](https://itsfoss.com/shutter-edit-button-disabled/)
 
 #### [ctop](https://github.com/bcicen/ctop)
 ```
