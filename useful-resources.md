@@ -12,3 +12,4 @@
 * [Duplicity](http://duplicity.nongnu.org/index.html) - Encrypted bandwidth-efficient backup using the rsync algorithm
 * [Localstack](https://github.com/localstack/localstack) - A fully functional local AWS cloud stack
 * [Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) - Lighthouse is an open-source, automated tool for improving the quality of web pages. 
+* [Ethereal](https://ethereal.email/) - Ethereal is a fake SMTP service
