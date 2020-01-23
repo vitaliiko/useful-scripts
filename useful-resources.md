@@ -14,3 +14,4 @@
 * [Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) - Lighthouse is an open-source, automated tool for improving the quality of web pages. 
 * [Ethereal](https://ethereal.email/) - Ethereal is a fake SMTP service
 * [SonarQube](https://www.sonarqube.org/) - Code Quality and Security
+* [FROM:latest](https://www.fromlatest.io/#/) - An opinionated Dockerfile linter
