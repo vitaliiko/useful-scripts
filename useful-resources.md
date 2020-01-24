@@ -15,3 +15,4 @@
 * [Ethereal](https://ethereal.email/) - Ethereal is a fake SMTP service
 * [SonarQube](https://www.sonarqube.org/) - Code Quality and Security
 * [FROM:latest](https://www.fromlatest.io/#/) - An opinionated Dockerfile linter
+* [Combined typographic layouts](https://shvetsgroup.com/ru/blog/typography-symbols-layouts) - Combined typographic Russian and Ukrainian layouts for Windows
