@@ -16,3 +16,4 @@
 * [SonarQube](https://www.sonarqube.org/) - Code Quality and Security
 * [FROM:latest](https://www.fromlatest.io/#/) - An opinionated Dockerfile linter
 * [Combined typographic layouts](https://shvetsgroup.com/ru/blog/typography-symbols-layouts) - Combined typographic Russian and Ukrainian layouts for Windows
+* [Emojipedia](https://emojipedia.org/) - All emoji names are official character and/or CLDR names and code points listed as part of the Unicode Standard
