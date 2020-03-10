@@ -11,7 +11,7 @@
 [Grep](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/grep.md)  
 [Gzip](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gzip.md)  
 [JQ](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/jq.md)  
-[Shell](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/linx_shell.md)  
+[Shell](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/linux_shell.md)  
 [MySQL](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/mysql.md)  
 [sed](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/sed.md)  
 [tar](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/tar.md)  
