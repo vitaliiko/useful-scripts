@@ -53,9 +53,14 @@ docker rmi $(docker images -q ubuntu)
 docker run -it --rm -w /app -v $(pwd):/app image bash
 ```
 
+#### Inspect mounts of a container
+```
+docker inspect -f "{{ .Mounts }}" <container>
+```
+
 #### Get the IP of eth0 inside the container
 ```
-docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}"
+docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}" <container>
 ```
 
 #### Check size of containers
