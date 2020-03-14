@@ -53,9 +53,18 @@ docker rmi $(docker images -q ubuntu)
 docker run -it --rm -w /app -v $(pwd):/app image bash
 ```
 
+#### Mount SSH Keys into a Docker Container
+```
+docker run --rm -it -v ~/.ssh:/root/.ssh:ro alpine
+```
+
 #### Inspect mounts of a container
 ```
 docker inspect -f "{{ .Mounts }}" <container>
+```
+#### Run ontainer with ulimit parameter in case "file-descriptors limit is too low" or something similar happend
+```
+docker run --ulimit nofile=65535:65535 image_name
 ```
 
 #### Get the IP of eth0 inside the container
@@ -94,11 +103,6 @@ docker cp SRC_PATH CONTAINER:DEST_PATH
 #### Run ctop
 ```
 docker run --rm -ti --name=ctop -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest
-```
-
-#### Mount SSH Keys into a Docker Container
-```
-docker run --rm -it -v ~/.ssh:/root/.ssh:ro alpine
 ```
 
 #### Check size occupied by containers and their volumes

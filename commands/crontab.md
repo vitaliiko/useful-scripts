@@ -10,3 +10,11 @@
 ```
 0 3 * * *
 ```
+
+#### To set up bacground cron job on linux
+1. `crontab -e`
+1. Add line with schedule and script to be performed
+```
+@weekly home/user/script.sh >> /home/user/logs.txt
+```
+This will run script weekly and write its output to a text file

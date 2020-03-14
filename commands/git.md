@@ -30,4 +30,7 @@ git rev-parse HEAD | head -c 7
 ```
 git config --global core.editor "subl -n -w"
 ```
-
+for Windows
+```
+git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text.exe' -w"
+```

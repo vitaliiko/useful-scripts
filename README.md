@@ -14,6 +14,7 @@
 [Shell](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/linux_shell.md)  
 [MySQL](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/mysql.md)  
 [sed](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/sed.md)  
+[SSH](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/ssh.md)  
 [tar](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/tar.md)  
 [wget](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/wget.md)  
 [xargs](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/xargs.md)  
@@ -38,8 +39,6 @@ alias help-sed='cat ~/projects/useful-scripts/commands/sed.md'
 -  [x] gzip, tar, bzip2 ...
 -  [ ] netcat
 -  [ ] https://stedolan.github.io/jq/
--  [ ] https://willnorris.com/go/imageproxy
--  [ ] Add flex-box
 -  [ ] Add Best practices
 -  [ ] Add Elasticsearch
 -  [ ] Add Logstash

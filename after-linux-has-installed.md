@@ -1,18 +1,17 @@
 ### Programs to install
 1. Chrome
-1. RescueTime
 1. [Krusader](https://community.linuxmint.com/software/view/krusader)
 1. Telegram
 1. Slack
 1. Skype
 1. Intellij IDEA
 1. WebStorm
+1. Datagrip
 1. MySQL Workbench
 1. [SQL Workbench](https://www.sql-workbench.eu/downloads.html)
 1. Postman
 1. [gnome-alsamixer](https://community.linuxmint.com/software/view/gnome-alsamixer)
 1. [ngrok](https://dashboard.ngrok.com/get-started)
-1. [HeidiSQL](https://www.heidisql.com/download.php)
 1. [Peek](https://mintguide.org/tools/682-peek-simple-animated-gif-screen-recorder.html)
 
 ### Packages to install

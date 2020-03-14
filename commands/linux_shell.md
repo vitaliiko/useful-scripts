@@ -16,19 +16,26 @@ find -name "* *" -type d | rename 's/ /_/g'
 find -name "* *" -type f | rename 's/ /_/g'
 ```
 
-#### Copy file with scp
-```
-scp input.txt user@ip_adress:/home/user
-```
-
-#### Recursively send folder via ssh with excludings
-```
-rsync -rv -e "ssh -l user" --exclude 'node_modules' --exclude '*.log' ./folder ip_adress:/home/user
-```
-
 #### Get current date in a certain format
 ```
 date '+%Y-%m-%d %H:%M:%S'
+```
+
+#### Get uniq set of lines
+```
+<input> | sort | uniq
+or 
+<input> | sort -u
+```
+
+#### Sort lines of numbers in reverse order
+```
+<input> | sort -rn
+```
+
+#### Kill all processes with a certain name
+```
+ps aux | awk '/<app>/ {print $2}' | xargs kill
 ```
 
 ### File conversion
@@ -48,31 +55,9 @@ echo line > $file_name
 echo line >> $file_name
 ```
 
-#### Use scp with password in a script
-```
-sshpass -p $password scp $source $destination
-```
-
 #### Merge files line by line and separate by semicolon
 ```
 paste -d ';' file1.txt file2.txt > merge.txt
-```
-
-#### Get uniq set of lines
-```
-<input> | sort | uniq
-or 
-<input> | sort -u
-```
-
-#### Sort lines of numbers in reverse order
-```
-<input> | sort -rn
-```
-
-#### Kill all processes with a certain name
-```
-ps aux | awk '/<app>/ {print $2}' | xargs kill
 ```
 
 #### Split file by multiple ones

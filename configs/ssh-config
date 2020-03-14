@@ -1,0 +1,6 @@
+# To set up which ssh key will be used for specified host create ~/.ssh/config file with such a content
+
+host github.com
+ HostName github.com
+ IdentityFile ~/.ssh/id_rsa
+ User git
