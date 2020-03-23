@@ -80,3 +80,8 @@ split --additional-suffix=.csv --numeric-suffixes -C 999000 <file_name>.csv <out
 sudo apt-get install imagemagick
 convert image.png image.jpg
 ```
+
+#### Print first lines of all files without file names
+```
+head -n1 -q *.txt
+```
