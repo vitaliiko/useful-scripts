@@ -85,3 +85,10 @@ convert image.png image.jpg
 ```
 head -n1 -q *.txt
 ```
+
+#### Find lines from file1 which missing in file2
+```
+cat file1 | sort > file1_sorted
+cat file2 | sort > file2_sorted
+diff --new-line-format="" --unchanged-line-format="" file1_sorted file2_sorted
+```
