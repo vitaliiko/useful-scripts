@@ -87,6 +87,11 @@ docker network inspect -f '{{range .Containers}}{{.Name}} {{end}}' <network>
 docker network connect <network> <container>
 ```
 
+#### Get ICC setting for a specific network
+```
+docker inspect -f '{{index .Options "com.docker.network.bridge.enable_icc"}}' <network>
+```
+
 #### Check size of containers
 ```
 docker ps -s
