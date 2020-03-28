@@ -1,6 +1,13 @@
 ## Commands
 
-#### Port statistic
+#### Find open porst in the system
+```
+netstat -tulpn
+netstat -tlpn # Just TCP ports
+netstat -ulpn # Just UDP ports
+```
+
+#### Specific port check
 ```
 sudo netstat -lpn | grep :8080
 ```
