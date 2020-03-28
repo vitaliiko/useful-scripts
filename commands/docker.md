@@ -72,6 +72,21 @@ docker run --ulimit nofile=65535:65535 image_name
 docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}" <container>
 ```
 
+#### List all networks a container belongs to
+```
+docker inspect -f '{{range $key, $value := .NetworkSettings.Networks}}{{$key}} {{end}}' <container>
+```
+
+#### List all containers belonging to a network by name
+```
+docker network inspect -f '{{range .Containers}}{{.Name}} {{end}}' <network>
+```
+
+#### Attach a running container to a network
+```
+docker network connect <network> <container>
+```
+
 #### Check size of containers
 ```
 docker ps -s
