@@ -22,3 +22,5 @@
 * [Emojipedia](https://emojipedia.org/) - All emoji names are official character and/or CLDR names and code points listed as part of the Unicode Standard
 * [Quicklink](https://github.com/GoogleChromeLabs/quicklink) - Faster subsequent page-loads by prefetching in-viewport links during idle time
 * [Imageproxy](https://willnorris.com/go/imageproxy)
+* [OBS Studio](https://obsproject.com/) - Free and open source software for video recording and live streaming.
+* [Darktable](https://www.darktable.org/) - darktable is an open source photography workflow application and raw developer
