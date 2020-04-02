@@ -25,3 +25,4 @@
 * [OBS Studio](https://obsproject.com/) - Free and open source software for video recording and live streaming.
 * [Darktable](https://www.darktable.org/) - darktable is an open source photography workflow application and raw developer
 * [diff-match-patch](https://github.com/google/diff-match-patch) - The Diff Match and Patch libraries offer robust algorithms to perform the operations required for synchronizing plain text.
+* [Colors in Material Design spec](https://material-ui.com/customization/color/)
