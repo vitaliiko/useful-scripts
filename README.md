@@ -45,6 +45,4 @@ alias help-sed='cat ~/projects/useful-scripts/commands/sed.md'
 -  [ ] Rename to handbook 
 -  [ ] sed http://www.theunixschool.com/2014/08/sed-examples-remove-delete-chars-from-line-file.html
 
-#### Best practices
 
-Investigate API of libraries somebody used in a project
