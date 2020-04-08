@@ -62,7 +62,7 @@ gzip --best file.txt
 tar czvf etc.tar.gz /etc/
 ```
 where 
-c = create a new tar archive
-z = use gzip
-v = verbose information
-f = specify file name
+* c = create a new tar archive
+* z = use gzip
+* v = verbose information
+* f = specify file name
