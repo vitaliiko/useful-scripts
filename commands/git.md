@@ -10,6 +10,13 @@ git reset --hard HEAD~3
 git checkout newbranch  
 ```
 
+#### Move commits from one branth to another one (!! considering chronological order)
+```
+git checkout branch-B
+git cherry-pick hash1
+git cherry-pick hash2
+```
+
 #### Push to another branch
 ```
 git push origin branch1:branch2  
