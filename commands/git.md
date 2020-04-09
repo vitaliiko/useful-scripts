@@ -33,6 +33,32 @@ git shortlog -s -n --all --no-merges
 git rev-parse HEAD | head -c 7
 ```
 
+#### Undo git stash pop that results in merge conflict
+```
+git reset HEAD .
+git stash
+```
+
+#### Create patch
+To create patch with not commited chages
+```
+git diff <commit_hash> > changes.patch
+```
+To create patch with changes between commits
+```
+git diff <commit_hash_1> <commit_hash_2> > changes.patch
+```
+
+#### Apply patch
+```
+git apply changes.patch
+```
+
+#### Check is a patch is applicable
+```
+git apply --check changes.patch
+```
+
 #### Use Sublime as a default editor
 ```
 git config --global core.editor "subl -n -w"
