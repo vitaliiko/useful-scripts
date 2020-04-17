@@ -45,6 +45,11 @@ or
 ps aux | awk '/<app>/ {print $2}' | xargs kill
 ```
 
+#### Print IP address of a domain
+```
+dig +short google.com
+```
+
 ### File conversion
 
 #### Merge files line-by-line
