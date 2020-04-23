@@ -58,6 +58,11 @@ docker run -it --rm -w /app -v $(pwd):/app image bash
 docker run --rm -it -v ~/.ssh:/root/.ssh:ro alpine
 ```
 
+#### Get names of running containers
+```
+docker ps --format '{{.Names}}'
+```
+
 #### Inspect mounts of a container
 ```
 docker inspect -f "{{ .Mounts }}" <container>
