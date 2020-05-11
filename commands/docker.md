@@ -82,6 +82,16 @@ docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}
 docker inspect -f '{{range $key, $value := .NetworkSettings.Networks}}{{$key}} {{end}}' <container>
 ```
 
+#### Check restart policy of a container
+```
+docker inspect -f "{{ .HostConfig.RestartPolicy }}" <container>
+```
+
+#### Update restart policy of a container 
+```
+docker update --restart always <container>
+```
+
 #### List all containers belonging to a network by name
 ```
 docker network inspect -f '{{range .Containers}}{{.Name}} {{end}}' <network>
