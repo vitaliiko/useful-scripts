@@ -15,6 +15,7 @@ into `.bashrc` and perform `source ~/.bashrc` after each edit of `.bash_aliases`
 ```
 alias dc='docker-compose'
 alias tempo='git add . && git commit -m "Tempo commit"'  
+alias dkill='docker kill $(docker ps -q)'
 ```
 
 
