@@ -67,3 +67,23 @@ for Windows
 ```
 git config --global core.editor "'C:/Program Files/Sublime Text 3/sublime_text.exe' -w"
 ```
+
+#### Remove untracked files and directories
+First, check which files will be removed
+```
+git clean -d -n
+```
+Then remove
+```
+git clean -d -f
+```
+
+#### Remove untracked and ignored files and directories
+```
+git clean -d -f -x
+```
+
+#### Remove only ignored files and directories
+```
+git clean -d -f -X
+```
