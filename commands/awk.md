@@ -53,3 +53,10 @@ awk 'FNR==1{print ""}{print}' *.xml > result.xml
 #### Replace first word in each line
 ```
 <input> | awk '{$1 = ""; print $0}' | sed 's/^ //g'
+```
+
+#### Add blank column to a file
+```
+awk -F, '$2="," $2' OFS=, <input>
+```
+
