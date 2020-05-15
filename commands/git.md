@@ -87,3 +87,8 @@ git clean -d -f -x
 ```
 git clean -d -f -X
 ```
+
+#### Restore deleted not commited files
+```
+git checkout HEAD <filename>
+```
