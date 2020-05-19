@@ -37,3 +37,8 @@ sed -i s,placeholder,http://example.com,g file.txt
 ```
 sed -r '/^\s*$/d' file.txt | sed 's/^/string/' > result.txt
 ```
+
+#### Replace new line
+```
+sed ':a;N;$!ba;s/\n/ /g' file.txt
+```
