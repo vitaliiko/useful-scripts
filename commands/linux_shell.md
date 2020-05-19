@@ -98,6 +98,11 @@ convert image.png image.jpg
 head -n1 -q *.txt
 ```
 
+#### Print column headers of all files but replace each separator with a new line
+```
+head -n1 -q *.dat | sed ':a;N;$!ba;s/\n/\n\n/g' | sed 's/|/\n/g' > columns.txt
+```
+
 #### Find lines from file1 which missing in file2
 ```
 cat file1 | sort > file1_sorted
