@@ -42,6 +42,14 @@ git stash
 #### Create patch
 To create patch with not commited chages
 ```
+git diff > changes.patch
+```
+To create patch with changes in specified files
+```
+git diff -- file1 file2 > changes.patch
+```
+To create patch based on a scpecified commit
+```
 git diff <commit_hash> > changes.patch
 ```
 To create patch with changes between commits
