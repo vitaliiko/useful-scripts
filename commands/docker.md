@@ -72,16 +72,6 @@ docker inspect -f "{{ .Mounts }}" <container>
 docker run --ulimit nofile=65535:65535 image_name
 ```
 
-#### Get the IP of eth0 inside the container
-```
-docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}" <container>
-```
-
-#### List all networks a container belongs to
-```
-docker inspect -f '{{range $key, $value := .NetworkSettings.Networks}}{{$key}} {{end}}' <container>
-```
-
 #### Check restart policy of a container
 ```
 docker inspect -f "{{ .HostConfig.RestartPolicy }}" <container>
@@ -90,6 +80,16 @@ docker inspect -f "{{ .HostConfig.RestartPolicy }}" <container>
 #### Update restart policy of a container 
 ```
 docker update --restart always <container>
+```
+
+#### Get the IP of eth0 inside the container
+```
+docker inspect --format="{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}" <container>
+```
+
+#### List all networks a container belongs to
+```
+docker inspect -f '{{range $key, $value := .NetworkSettings.Networks}}{{$key}} {{end}}' <container>
 ```
 
 #### List all containers belonging to a network by name
