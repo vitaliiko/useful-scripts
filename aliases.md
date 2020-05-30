@@ -16,6 +16,7 @@ into `.bashrc` and perform `source ~/.bashrc` after each edit of `.bash_aliases`
 alias dc='docker-compose'
 alias tempo='git add . && git commit -m "Tempo commit"'  
 alias dkill='docker kill $(docker ps -q)'
+alias g='git'
 ```
 
 
@@ -40,4 +41,12 @@ Add to `.gitconfig`
 ```
 ri = "!ri() { git rebase -i HEAD~$1; }; ri"  
 la = "!git config -l | grep alias | cut -c 7-"  
+```
+
+### Windows
+For Windows aliases could be added to `C://Users/username/.bash_profile` file.
+
+To use Sublime Text in Git Shell:
+```
+alias subl="/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
 ```
