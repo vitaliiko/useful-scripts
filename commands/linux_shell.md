@@ -35,6 +35,11 @@ or
 <input> | sort -u
 ```
 
+#### Count lines without empty ones
+```
+<input> | sed '/^\s*$/d' | wc -l
+```
+
 #### Sort lines of numbers in reverse order
 ```
 <input> | sort -rn
