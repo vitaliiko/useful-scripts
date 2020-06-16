@@ -7,6 +7,10 @@
 1. Optionally. Set up [config](https://github.com/vitaliykobrin/useful-scripts/blob/master/configs/ssh-config.yml) for multiple keys usage
 1. Run `chmod 600 ~/.ssh/config` to allow read/write only to an owner
 
+#### To generage RSA SSH key
+```
+ssh-keygen -t rsa -m PEM
+```
 
 #### Copy file with scp
 ```
