@@ -36,6 +36,7 @@ git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --grap
 git config --global alias.last 'log -1 HEAD'  
 git config --global alias.who "shortlog -n -s --no-merges"  
 git config --global alias.undo "reset HEAD~1"  
+git config --global alias.aj "add *.java"
 ```  
 Add to `.gitconfig`  
 ```
