@@ -3,12 +3,12 @@
 result_file=result.txt
 
 compare () {
-	diff --new-line-format="" --unchanged-line-format="" --ignore-blank-lines --ignore-space-change $1 $2
+    diff --new-line-format="" --unchanged-line-format="" --ignore-blank-lines --ignore-space-change $1 $2
 }
 
 find_missing_lines () {
-	compare $1 $2 >> $result_file
-	echo $(compare $1 $2 | wc -l) differences found >> $result_file
+    compare $1 $2 >> $result_file
+    echo $(compare $1 $2 | wc -l) differences found >> $result_file
 }
 
 printf '' > $result_file
