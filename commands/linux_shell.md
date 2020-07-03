@@ -35,7 +35,7 @@ or
 <input> | sort -u
 ```
 
-#### Count lines without empty ones
+#### Count non empty lines
 ```
 <input> | sed '/^\s*$/d' | wc -l
 ```
