@@ -27,3 +27,9 @@ or
 ```
 $(aws s3 ls s3://${bucket_name} | grep ${object_name}) | awk '{print $1" "$2}'
 ```
+
+### EC2
+#### Get public IP address of an instace
+```
+aws ec2 describe-instances --instance-ids <ID> | grep PublicIpAddress | awk -F'"' '{print $4}'
+```
