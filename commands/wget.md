@@ -23,3 +23,8 @@ Add `<base href="/support/knowledge_base/">` if links are relative
 ```
 wget --limit-rate=200k http://www.domain.com/filename.tar.gz
 ```
+
+#### Download with login and password
+```
+wget --user=username --password='password' ftp://ftp.com/...
+```
