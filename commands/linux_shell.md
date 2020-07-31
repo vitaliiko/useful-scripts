@@ -114,3 +114,9 @@ cat file1 | sort > file1_sorted
 cat file2 | sort > file2_sorted
 diff --new-line-format="" --unchanged-line-format="" file1_sorted file2_sorted
 ```
+
+#### Uppercase string
+```
+string=some text
+echo ${string^^}
+```
