@@ -42,3 +42,13 @@ sed -r '/^\s*$/d' file.txt | sed 's/^/string/' > result.txt
 ```
 sed ':a;N;$!ba;s/\n/ /g' file.txt
 ```
+
+#### Uppercase text
+```
+sed 's/[a-z]/\U&/g'
+```
+
+#### Lowercase text
+```
+sed 's/[A-Z]/\L&/g'
+```
