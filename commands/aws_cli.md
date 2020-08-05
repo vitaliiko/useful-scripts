@@ -33,3 +33,33 @@ $(aws s3 ls s3://${bucket_name} | grep ${object_name}) | awk '{print $1" "$2}'
 ```
 aws ec2 describe-instances --instance-ids <ID> | grep PublicIpAddress | awk -F'"' '{print $4}'
 ```
+
+#### See information about Security group
+```
+aws ec2 describe-security-groups --group-name launch-wizard-1
+```
+
+#### Set Security group rule for access via SSH
+```
+aws ec2 authorize-security-group-ingress \
+    --group-name launch-wizard-1 \
+    --protocol tcp \
+    --port 22 \
+    --cidr <IP_address>/32
+```
+
+#### Remove Security group rule by IP
+```
+aws ec2 revoke-security-group-ingress \
+        --group-name launch-wizard-1 \
+        --protocol tcp \
+        --port 22 \
+        --cidr <IP_address>
+```
+
+#### Add description for an existing Security group rule by IP
+```
+aws ec2 update-security-group-rule-descriptions-ingress \
+    --group-id sg-123abc12 \
+    --ip-permissions '[{"IpProtocol": "tcp", "FromPort": 22, "ToPort": 22, "IpRanges": [{"CidrIp": "203.0.113.0/16", "Description": "SSH access from ABC office"}]}]'
+```
