@@ -7,3 +7,13 @@ find Documnets -depth | xargs -n 1 rename -v 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \;
 ```
 find . -type f -not -name '*gz' -print0 | xargs -0 -I {} rm -v {}
 ```
+
+#### Call defined function in xargs
+```
+showword() {
+  echo $1
+}
+
+export -f showword
+echo This is a sample message | xargs bash -c 'showword "$@"'
+```
