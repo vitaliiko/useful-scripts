@@ -55,6 +55,15 @@ ps aux | awk '/<app>/ {print $2}' | xargs kill
 dig +short google.com
 ```
 
+#### Print my public IP address
+```
+dig +short myip.opendns.com @resolver1.opendns.com
+```
+or
+```
+dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+```
+
 ### File conversion
 
 #### Merge files line-by-line
