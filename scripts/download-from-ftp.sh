@@ -18,3 +18,8 @@ wget --user=$username --password=$password $base_path/$target_file_name
 echo Unziping archive
 unzip $target_file_name
 
+# How to use:
+# ./download-from-ftp.sh \
+#	username password \
+#	ftp://path/to/file file_name.zip \
+#	downloading_folder
