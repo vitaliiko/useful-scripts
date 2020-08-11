@@ -1,6 +1,6 @@
 ## Commands
 
-#### Find open porst in the system
+#### Find open ports in the system
 ```
 netstat -tulpn
 netstat -tlpn # Just TCP ports
