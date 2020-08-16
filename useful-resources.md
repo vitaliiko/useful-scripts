@@ -27,3 +27,4 @@
 * [diff-match-patch](https://github.com/google/diff-match-patch) - The Diff Match and Patch libraries offer robust algorithms to perform the operations required for synchronizing plain text.
 * [Colors in Material Design spec](https://material-ui.com/customization/color/)
 * [Scoope](https://scoop.sh/) - A command-line installer for Windows
+* [Dive](https://github.com/wagoodman/dive)  - A tool for exploring a docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image
