@@ -9,7 +9,7 @@
 [Docker](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/docker.md)  
 [Google Cloud](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gcloud.md)  
 [Git](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/git.md)  
-[GPG](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gpg.md)
+[GPG](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gpg.md) 
 [Grep](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/grep.md)  
 [Gzip](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gzip.md)  
 [JQ](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/jq.md)  
