@@ -23,3 +23,13 @@ ssb   4096R/42B317FD4BA89E7A 2016-03-10
 gpg --armor --export <key-id> > pubkey.asc
 gpg --export-secret-keys --armor <key-id> > privkey.asc
 ```
+
+#### To encrypt file
+```
+gpg --output doc.csv.pgp --encrypt -r <recipient-email> doc.csv
+```
+
+#### To decrypt file
+```
+gpg --output doc.csv --decrypt doc.csv.pgp
+```
