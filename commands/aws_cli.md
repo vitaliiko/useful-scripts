@@ -28,6 +28,11 @@ or
 $(aws s3 ls s3://${bucket_name} | grep ${object_name}) | awk '{print $1" "$2}'
 ```
 
+#### List files in a bucket
+```
+aws s3 ls s3://mybucket --recursive --human-readable --summarize
+```
+
 ### EC2
 #### Get public IP address of an instace
 ```
