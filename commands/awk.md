@@ -1,5 +1,7 @@
 #### Split line by custom separator and print second field
 ```
+<input> | awk -F<separator> '{print $2}'
+or
 <input> | awk -F'[<separator>]' '{print $2}'
 or
 <input> | awk 'BEGIN {FS="<separator>"} {print $2}'
