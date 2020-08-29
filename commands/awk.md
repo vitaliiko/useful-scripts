@@ -1,10 +1,10 @@
 #### Split line by custom separator and print second field
 ```
-<input> | awk -F<separator> '{print $2}'
+awk -F<separator> '{print $2}' input.txt
 or
-<input> | awk -F'[<separator>]' '{print $2}'
+awk -F'[<separator>]' '{print $2}' input.txt
 or
-<input> | awk 'BEGIN {FS="<separator>"} {print $2}'
+awk 'BEGIN {FS="<separator>"} {print $2}' input.txt
 ```
 
 #### Get all items between double quotes and write them with prefix to another file
