@@ -2,7 +2,7 @@
 
 #### Import data from tsv file
 ```
-arangoimport 
+arangoimport \
         --server.database "<database>" \
         --file "<file name>" \
         --type tsv \
@@ -12,7 +12,7 @@ arangoimport
 
 #### Create dump
 ```
-arangodump 
+arangodump \
         --server.username <user_name> \
         --server.password <password> \
         --server.database <db_name> \
