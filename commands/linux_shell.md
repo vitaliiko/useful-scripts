@@ -135,3 +135,8 @@ diff --new-line-format="" --unchanged-line-format="" file1_sorted file2_sorted
 string=some text
 echo ${string^^}
 ```
+
+#### Find common lines in two files
+```
+comm -12 <(sort file1) <(sort file2)
+```
