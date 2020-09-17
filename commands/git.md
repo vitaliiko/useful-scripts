@@ -39,6 +39,11 @@ git reset HEAD .
 git stash
 ```
 
+#### Revert merge commit
+```
+git revert -m 1 <commit-hash>
+```
+
 #### Create patch
 To create patch with not commited chages
 ```
