@@ -33,10 +33,20 @@ $(aws s3 ls s3://${bucket_name} | grep ${object_name}) | awk '{print $1" "$2}'
 aws s3 ls s3://mybucket --recursive --human-readable --summarize
 ```
 
+#### Delete multiple files
+```
+echo files_to_remove.txt | xargs -n1 aws s3 rm
+```
+
 ### EC2
-#### Get public IP address of an instace
+#### Get public instace IP address
 ```
 aws ec2 describe-instances --instance-ids <ID> | grep PublicIpAddress | awk -F'"' '{print $4}'
+```
+
+#### Get public instance DNS
+```
+aws ec2 describe-instances --instance-ids <ID> | grep PublicDnsName | head -n 1 | awk -F'"' '{print $4}'
 ```
 
 #### See information about Security group
