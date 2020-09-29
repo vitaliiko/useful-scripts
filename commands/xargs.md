@@ -1,3 +1,8 @@
+#### Call xargs for all outputs one by one
+```
+cat file_with_argumantes.txt | xargs -n1 echo
+```
+
 #### Rename all files or subdirectories in a particular directory to lowercase
 ```
 find Documnets -depth | xargs -n 1 rename -v 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \;
