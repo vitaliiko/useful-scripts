@@ -43,6 +43,11 @@ aws s3 ls s3://mybucket --recursive --human-readable --summarize
 echo files_to_remove.txt | xargs -n1 aws s3 rm
 ```
 
+#### Get name of latest uploaded file to a bucket
+```
+aws s3 ls s3://bucket-name/folder --recursive | sort | tail -n 1 | awk '{print $4}'
+```
+
 ### EC2
 #### Get public instace IP address
 ```
