@@ -14,6 +14,11 @@ aws s3 cp <path_on_local_machine> s3://<bucket_name>/<path_to_file>
 aws s3 cp s3://<bucket_name>/<path_to_file> <path_on_local_machine>
 ```
 
+#### Download directory from S3
+```
+aws s3 cp s3://<bucket_name>/<path_to_dir> <path_on_local_machine> --recursive
+```
+
 #### Sync files with S3. This will upload missed or updated files to a bucket:
 ```
 aws s3 sync /some-folder s3://bucket-name/folder
