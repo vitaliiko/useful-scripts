@@ -10,6 +10,28 @@ fi
 
 into `.bashrc` and perform `source ~/.bashrc` after each edit of `.bash_aliases`
 
+#### Aliases for this chit-sheet
+alias harango='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/arangodb.md'  
+alias hawk='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/awk.md'  
+alias haws='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/aws_cli.md'  
+alias hcron='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/crontab.md'  
+alias hcurl='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/curl.md'  
+alias hdocker='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/docker.md'  
+alias hgcloud='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/gcloud.md'  
+alias hgit='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/git.md'  
+alias hgpg='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/gpg.md'  
+alias hgrep='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/grep.md'  
+alias hgzip='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/gzip.md'  
+alias hjq='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/jq.md'  
+alias hsh='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/linux_shell.md'  
+alias hmysql='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/mysql.md'  
+alias hsed='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/sed.md'  
+alias hssh='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/ssh.md'  
+alias htar='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/tar.md'  
+alias hwget='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/wget.md'  
+alias hxargs='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/xargs.md'  
+
+
 #### Useful aliases
 
 ```
