@@ -29,3 +29,4 @@
 * [Scoope](https://scoop.sh/) - A command-line installer for Windows
 * [Dive](https://github.com/wagoodman/dive)  - A tool for exploring a docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image
 * [Caddy](https://caddyserver.com/) - A web server
+* [csvkit](https://csvkit.readthedocs.io/) - is a suite of command-line tools for converting to and working with CSV, the king of tabular file formats.
