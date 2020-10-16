@@ -10,7 +10,7 @@ fi
 
 into `.bashrc` and perform `source ~/.bashrc` after each edit of `.bash_aliases`
 
-#### Aliases for this chit-sheet
+#### Aliases for this cheat-sheet
 alias harango='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/arangodb.md'  
 alias hawk='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/awk.md'  
 alias haws='curl https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/aws_cli.md'  
