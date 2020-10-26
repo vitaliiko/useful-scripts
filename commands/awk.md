@@ -32,6 +32,11 @@ awk 'FNR==1{print ""}{print}' *.xml > result.xml
 <input> | awk '$2 ~ /cheese/'
 ```
 
+#### Add preffix and suffix to each line in a file
+```
+<input> | awk '{print "preffix"$0"suffix"}'
+```
+
 #### Print lines matched pattern and prefix them with line number
 ```
 <input> | awk '/cheese/ {print NR" "$0}'
