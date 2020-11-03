@@ -18,3 +18,7 @@ cat $FILE_NAME | grep -E "expression1|expression2"
 cat $FILE_NAME | grep -n "expression"
 ```
 
+#### Display N lines before and after the match
+```
+cat $FILE_NAME | grep -B N -A N "word"
+```
