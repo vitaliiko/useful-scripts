@@ -43,6 +43,10 @@ git stash
 ```
 git revert -m 1 <commit-hash>
 ```
+or
+```
+git reset --hard HEAD~1
+```
 
 #### Create patch
 To create patch with not commited chages
