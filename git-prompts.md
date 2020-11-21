@@ -15,4 +15,4 @@ To check PS1 value before this modification just use:
 echo $PS1
 ```
 
-Then use it value to append `\[\033[01;33m\]$(__git_ps1)` before `\[\033[00m\]\$`. This will add Git prompts without changes of existing format.
+Then use current PS1 value to add `\[\033[01;33m\]$(__git_ps1)` before `\[\033[00m\]\$`. This will add Git prompts without changes of existing format.
