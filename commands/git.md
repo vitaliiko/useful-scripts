@@ -109,3 +109,8 @@ git clean -d -f -X
 ```
 git checkout HEAD <filename>
 ```
+
+#### Use git remote with other SSH port
+```
+git remote add origin ssh://user@host:1234/path/to/git
+```
