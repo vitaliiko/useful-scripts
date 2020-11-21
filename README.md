@@ -21,16 +21,3 @@
 [wget](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/wget.md)  
 [xargs](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/xargs.md)  
 
-### TODO
--  [ ] add script to generate aliases for files with commands
--  [ ] alias for add certain file(s) to git and commit by one command
--  [x] gzip, tar, bzip2 ...
--  [ ] netcat
--  [ ] https://stedolan.github.io/jq/
--  [ ] Add Best practices
--  [ ] Add Elasticsearch
--  [ ] Add Logstash
--  [ ] Rename to handbook 
--  [ ] sed http://www.theunixschool.com/2014/08/sed-examples-remove-delete-chars-from-line-file.html, https://www.baeldung.com/linux/sed-editor?fbclid=IwAR1IcinyOCpXF4GH_lIy828ekcWhE-86dKbDj137RQPiK7qTez6FPbJ5KkQ
-
-
