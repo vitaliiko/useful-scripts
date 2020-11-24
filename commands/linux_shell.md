@@ -140,3 +140,21 @@ echo ${string^^}
 ```
 comm -12 <(sort file1) <(sort file2)
 ```
+
+#### To find a location of some program installation
+```
+whereis <tool name>
+
+e.g.
+whereis docker
+```
+
+#### To replace env vars in a file
+```
+envsubst < "config.env.sample" > "config.env"
+```
+
+#### To replace only specified env vars in a file
+```
+envsubst '$VAR1 $VAR2' < "config.env.sample" > "config.env"
+```
