@@ -136,9 +136,19 @@ string=some text
 echo ${string^^}
 ```
 
-#### Find common lines in two files
+#### Display common lines in two sorted files
 ```
-comm -12 <(sort file1) <(sort file2)
+comm -12 file1.txt file2.txt
+```
+
+#### Display lines that are only in file1 but not in file2
+```
+comm -23 file1.txt file2.txt
+```
+
+#### Display lines that are only in file2 but not in file1
+```
+comm -13 file1.txt file2.txt
 ```
 
 #### To find a location of some program installation
