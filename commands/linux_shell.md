@@ -69,6 +69,11 @@ dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
 . script-with-export-inside.sh
 ```
 
+#### Get current system logs
+```
+sudo tail -f /var/log/syslog
+```
+
 
 ### File conversion
 
