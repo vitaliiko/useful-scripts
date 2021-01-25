@@ -24,6 +24,11 @@ gpg --armor --export <key-id> > pubkey.asc
 gpg --export-secret-keys --armor <key-id> > privkey.asc
 ```
 
+#### To import keys
+```
+gpg --import key.asc
+```
+
 #### To encrypt file
 ```
 gpg --output doc.csv.pgp --encrypt -r <recipient-email> doc.csv
