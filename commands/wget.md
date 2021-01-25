@@ -1,11 +1,11 @@
 #### Download and set the output file name
 ```
-wget -O filename.zip http://www.domain.com/filename-4.0.1.zip
+wget -O filename.zip http://www.domain.com/filename.zip
 ```
 
 #### Download in background
 ```
-wget -b http://www.domain.com/filename-4.0.1.zip
+wget -b http://www.domain.com/filename.zip
 ```
 
 #### Download multiple files by links in a file
