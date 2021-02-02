@@ -1,4 +1,4 @@
-## Commands
+## Useful Shell Commands
 
 #### Find open ports in the system
 ```
