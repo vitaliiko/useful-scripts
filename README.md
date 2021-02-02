@@ -14,6 +14,7 @@
 [Gzip](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gzip.md)  
 [JQ](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/jq.md)  
 [Shell](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/linux_shell.md)  
+[File operations](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/file_operations.md)  
 [MySQL](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/mysql.md)  
 [sed](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/sed.md)  
 [SSH](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/ssh.md)  
