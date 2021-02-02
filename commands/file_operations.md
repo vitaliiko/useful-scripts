@@ -1,4 +1,4 @@
-### File conversion
+## File operations
 
 #### Merge files line-by-line
 ```
