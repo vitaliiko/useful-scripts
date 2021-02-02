@@ -97,6 +97,11 @@ echo line >> $file_name
 paste -d ';' file1.txt file2.txt > merge.txt
 ```
 
+#### Remove 4th column from CSV file
+```
+cut -d, -f4 --complement input.csv > output.csv
+```
+
 #### Split file by multiple ones
 ```
 split --additional-suffix=<suffix> --numeric-suffixes -n <count_of_files> <file_name> <output_file_prefix>
