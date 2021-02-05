@@ -57,3 +57,8 @@ sed 's/[a-z]/\U&/g'
 ```
 sed 's/[A-Z]/\L&/g'
 ```
+
+#### Prepend file with word
+```
+sed -i 1s/^/word/ file.txt
+```
