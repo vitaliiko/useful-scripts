@@ -88,3 +88,10 @@ aws ec2 update-security-group-rule-descriptions-ingress \
     --group-id sg-123abc12 \
     --ip-permissions '[{"IpProtocol": "tcp", "FromPort": 22, "ToPort": 22, "IpRanges": [{"CidrIp": "203.0.113.0/16", "Description": "SSH access from ABC office"}]}]'
 ```
+
+### Athena
+
+#### Execute query
+```
+aws athena start-query-execution --query-string "${query}" --result-configuration OutputLocation=s3://$execution_result_path/
+```
