@@ -83,3 +83,8 @@ comm -13 file1.txt file2.txt
 find -name "* *" -type d | rename 's/ /_/g'
 find -name "* *" -type f | rename 's/ /_/g'
 ```
+
+#### Change column delimiters from `,` to `|` considering quotes
+```
+cat file.csv | perl -pe 's/,(?![\s])/|/g' > file.dat
+```
