@@ -88,3 +88,8 @@ find -name "* *" -type f | rename 's/ /_/g'
 ```
 cat file.csv | perl -pe 's/,(?![\s])/|/g' > file.dat
 ```
+
+#### Remove file header
+```
+cat input.txt | tail -n +2 > result.txt
+```
