@@ -67,3 +67,13 @@ awk 'FNR==1{print ""}{print}' *.xml > result.xml
 awk -F, '$2="," $2' OFS=, <input>
 ```
 
+#### Change date format from 31/01/2021 to 2021-01-31
+```
+input.dat | awk '
+    BEGIN { FS = OFS = "|" } 
+    { split($2, date, /\//)
+      $2 = date[3] "-" date[2] "-" date[1]
+      print $0 
+    }
+'
+```
