@@ -77,3 +77,8 @@ input.dat | awk '
     }
 '
 ```
+
+#### Skip empty values
+```
+awk '{if ($1) print $1;}' < input.txt
+```
