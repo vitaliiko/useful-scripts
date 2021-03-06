@@ -68,6 +68,11 @@ dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
 sudo tail -f /var/log/syslog
 ```
 
+#### To monitor disk IO performance 
+```
+iotop -o
+```
+
 #### Uppercase string
 ```
 string=some text
