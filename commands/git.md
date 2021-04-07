@@ -114,3 +114,10 @@ git checkout HEAD <filename>
 ```
 git remote add origin ssh://user@host:1234/path/to/git
 ```
+
+#### Merge remove branch into current one
+```
+git fetch origin aRemoteBranch
+git merge origin/aRemoteBranch
+```
+
