@@ -96,3 +96,8 @@ envsubst < "config.env.sample" > "config.env"
 ```
 envsubst '$VAR1 $VAR2' < "config.env.sample" > "config.env"
 ```
+
+#### Set max virtual memory areas
+```
+vm.max_map_count=262144
+```
