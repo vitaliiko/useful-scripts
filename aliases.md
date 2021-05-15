@@ -39,6 +39,7 @@ alias dc='docker-compose'
 alias tempo='git add . && git commit -m "Tempo commit"'  
 alias dkill='docker kill $(docker ps -q)'
 alias g='git'
+alias runftp='systemctl start vsftpd.service'
 ```
 
 
