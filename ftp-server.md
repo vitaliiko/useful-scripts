@@ -31,3 +31,8 @@ ssl_sslv3=NO
 3. Run FTP server: `sudo systemctl start vsftpd.service`
 4. Chech FTP server status: `sudo systemctl status vsftpd.service`
 5. Add user: `sudo adduser <username>`
+
+***
+To restart FTP server: `sudo systemctl restart vsftpd.service`
+
+To run FTP server on system start up: `sudo systemctl enable vsftpd.service`
