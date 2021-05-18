@@ -71,7 +71,7 @@ git diff <commit_hash_1> <commit_hash_2> > changes.patch
 git apply changes.patch
 ```
 
-#### Check is a patch is applicable
+#### Check if a patch is applicable
 ```
 git apply --check changes.patch
 ```
@@ -115,7 +115,7 @@ git checkout HEAD <filename>
 git remote add origin ssh://user@host:1234/path/to/git
 ```
 
-#### Merge remove branch into current one
+#### Merge remote branch into current one
 ```
 git fetch origin aRemoteBranch
 git merge origin/aRemoteBranch
