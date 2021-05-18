@@ -46,7 +46,7 @@ services:
 
 
 
-  # ELK stack example
+  # Elasticsearch claster example
   elasticsearch1:
     image: docker.elastic.co/elasticsearch/elasticsearch:6.6.2
     environment:
@@ -82,6 +82,8 @@ services:
     networks:
       - local_net
 
+
+  # ELK stack example
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:6.6.2
     ports:
