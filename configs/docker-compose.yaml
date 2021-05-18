@@ -1,0 +1,116 @@
+version: '3'
+
+networks:
+  local_net:
+
+services:
+
+  # Sonarqube example
+  java-code-analyzer:
+    image: openjdk:11
+    depends_on:
+      - sonarqube
+    volumes:
+      - ./app/:/app
+    networks:
+      - local_net
+    command: ./analyze-java-code-with-sonarqube.sh
+
+  sonarqube:
+    image: sonarqube:8-community
+    depends_on:
+      - sonarqube-db
+    environment:
+      SONAR_JDBC_URL: jdbc:postgresql://sonarqube-db:5432/sonar
+      SONAR_JDBC_USERNAME: sonar
+      SONAR_JDBC_PASSWORD: sonar
+    volumes:
+      - ./data/sonarqube_data:/opt/sonarqube/data
+      - ./data/sonarqube_extensions:/opt/sonarqube/extensions
+      - ./data/sonarqube_logs:/opt/sonarqube/logs
+    ports:
+      - 9000:9000
+    networks:
+      - local_net
+  
+  sonarqube-db:
+    image: postgres:12
+    environment:
+      POSTGRES_USER: sonar
+      POSTGRES_PASSWORD: sonar
+    volumes:
+      - ./data/postgresql:/var/lib/postgresql
+      - ./data/postgresql_data:/var/lib/postgresql/data
+    networks:
+      - local_net
+
+
+
+  # ELK stack example
+  elasticsearch1:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.6.2
+    environment:
+      - cluster.name=test-es-cluster
+      - node.name=test-es-node1
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - ./data/esdata1:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+    networks:
+      - local_net
+
+  elasticsearch2:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.6.2
+    environment:
+      - cluster.name=test-es-cluster
+      - node.name=test-es-node2
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "discovery.zen.ping.unicast.hosts=elasticsearch1"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - ./data/esdata2:/usr/share/elasticsearch/data
+    networks:
+      - local_net
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.6.2
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - "discovery.type=single-node"
+    networks:
+      - local_net
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:6.6.2
+    depends_on:
+      - elasticsearch
+    networks:
+      - local_net
+    volumes:
+      - ./app/logstash_configs:/configs
+    user: root
+    command: bin/logstash -f configs --log.level info
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:6.6.2
+    environment:
+      SERVER_NAME: kibana.local
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+    ports:
+      - '5601:5601'
+    networks:
+      - local_net
+    depends_on:
+      - elasticsearch
