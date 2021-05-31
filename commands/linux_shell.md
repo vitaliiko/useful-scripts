@@ -101,3 +101,8 @@ envsubst '$VAR1 $VAR2' < "config.env.sample" > "config.env"
 ```
 vm.max_map_count=262144
 ```
+
+#### Exclude directories from file list
+```
+find . -maxdepth 1 -not -type d
+```
