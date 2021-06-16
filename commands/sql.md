@@ -44,7 +44,7 @@ SELECT datname FROM pg_catalog.pg_database WHERE datname = '?';
 SELECT * FROM pg_stat_activity WHERE datname = '?';
 ```
 
-#### Get size of database
+#### Get size of a table
 ```
 SELECT pg_size_pretty( pg_total_relation_size('?') );
 ```
