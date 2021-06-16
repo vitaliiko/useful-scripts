@@ -1,3 +1,4 @@
+### MySQL
 
 #### Import data from one DB to another
 ```
@@ -29,4 +30,33 @@ mysqlimport -u user -p --fields-terminated-by=, dataBaseName tableName.csv
 #### Run SQL query
 ```
 mysql -u user -p -e 'show databases;'
+```
+
+### PostgreSQL
+
+#### Find database by name
+```
+SELECT datname FROM pg_catalog.pg_database WHERE datname = '?';
+```
+
+#### Get database activity info
+```
+SELECT * FROM pg_stat_activity WHERE datname = '?';
+```
+
+#### Get size of database
+```
+SELECT pg_size_pretty( pg_total_relation_size('?') );
+```
+
+#### Kill all connections to the DB
+```
+SELECT pg_terminate_backend(pg_stat_activity.pid) 
+FROM pg_stat_activity 
+WHERE pg_stat_activity.datname = '?' AND pid <> pg_backend_pid();
+```
+
+#### Drop database if exists
+```
+DROP DATABASE IF EXISTS ?;
 ```
