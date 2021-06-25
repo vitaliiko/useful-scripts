@@ -106,3 +106,8 @@ vm.max_map_count=262144
 ```
 find . -maxdepth 1 -not -type d
 ```
+
+#### Sort lines by amount of occurances
+```
+cat ids.txt | sort | uniq -c | sort -r -g
+```
