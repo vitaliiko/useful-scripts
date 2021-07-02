@@ -43,7 +43,8 @@ git stash
 ```
 git revert -m 1 <commit-hash>
 ```
-or
+
+#### Undo merge commit
 ```
 git reset --hard HEAD~1
 ```
