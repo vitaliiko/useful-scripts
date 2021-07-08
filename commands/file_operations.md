@@ -46,6 +46,12 @@ sudo apt-get install imagemagick
 convert image.png image.jpg
 ```
 
+#### Convert .mp3 into .flac
+```bash
+ffmpeg -i song.flac -ab 320k -map_metadata 0 -id3v2_version 3 song.mp3
+
+```
+
 #### Print first lines of all files without file names
 ```
 head -n1 -q *.txt
