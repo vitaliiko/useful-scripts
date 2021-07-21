@@ -23,6 +23,11 @@ sed -i '$ d' $filename
 sed -i '1d;$d' $filename
 ```
 
+#### Append line before the first one
+```
+sed -i '1 i\new_line' $filename
+```
+
 #### Replace occuranses of a string
 ```
 sed s/"string_to_replace"//g file.txt
