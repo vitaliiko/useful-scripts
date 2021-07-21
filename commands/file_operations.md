@@ -37,7 +37,7 @@ split --additional-suffix=<suffix> --numeric-suffixes -l <lines_count> <file_nam
 
 #### Split file by chunks that are not larger than 1MB without lines breaking
 ```
-split --additional-suffix=.csv --numeric-suffixes -C 999000 <file_name>.csv <output_file_prefix>
+split --additional-suffix=.csv -d -C 1m input_file.csv output_file_
 ```
 
 #### Convert image from PNG into JPG
