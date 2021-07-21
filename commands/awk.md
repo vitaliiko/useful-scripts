@@ -37,9 +37,19 @@ awk 'FNR==1{print ""}{print}' *.xml > result.xml
 <input> | awk '{print "preffix"$0"suffix"}'
 ```
 
-#### Print lines matched pattern and prefix them with line number
+#### Filter lines by pattern and prefix them with line number
 ```
 <input> | awk '/cheese/ {print NR" "$0}'
+```
+
+#### Filter lines by value in a specifid column
+```
+<input> | awk -F, '{if ($2 == "") print $1}'
+```
+
+#### Filter lines with empty value in a specifid column
+```
+<input> | awk -F, '{if ($2) print $1}'
 ```
 
 #### Print count of fields in each line
