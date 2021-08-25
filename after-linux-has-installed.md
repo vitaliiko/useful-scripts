@@ -7,14 +7,13 @@
 1. Intellij IDEA
 1. WebStorm
 1. Datagrip
-1. MySQL Workbench
-1. [SQL Workbench](https://www.sql-workbench.eu/downloads.html)
 1. Postman
 1. [gnome-alsamixer](https://community.linuxmint.com/software/view/gnome-alsamixer)
 1. [ngrok](https://dashboard.ngrok.com/get-started)
 1. [Peek](https://mintguide.org/tools/682-peek-simple-animated-gif-screen-recorder.html)
 
 ### Packages to install
+
 #### NVIDIA drivers
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
