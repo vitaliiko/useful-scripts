@@ -85,3 +85,9 @@ apt-get install enpass
 sudo gem install mdless
 ```
 
+#### [Kdenlive](https://kdenlive.org/en/)
+```
+sudo add-apt-repository ppa:kdenlive/kdenlive-stable
+sudo apt-get update
+sudo apt-get install kdenlive
+```
