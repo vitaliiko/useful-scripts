@@ -1,14 +1,9 @@
 ### Cloud SDK installation
 https://cloud.google.com/sdk/docs
 
-#### Set up creds from JSON file
+#### Set up creds with environment variable
 ```
-gcloud auth activate-service-account --key-file=creds.json
-```
-
-#### Set up creds for Google Cloud Storage tool from JSON file
-```
-gsutil config -е creds.json
+export GOOGLE_APPLICATION_CREDENTIALS=creds.json
 ```
 
 #### Alternative ways to set up creds from JSON file on Windows
@@ -26,7 +21,7 @@ $env:GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/keyfile.json
 
 #### Copy file from GCS to local machine
 ```
-gsutil cp gs://bucket-name/file.txt .
+gsutil cp gs://bucket-name/file.txt target/directory
 ```
 
 #### Remove file from GCS
