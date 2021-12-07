@@ -49,6 +49,12 @@ git revert -m 1 <commit-hash>
 git reset --hard HEAD~1
 ```
 
+#### Undo anything even rebase
+```
+git reflog
+git reset --hard HEAD@{N}
+```
+
 #### Create patch
 To create patch with not commited chages
 ```
