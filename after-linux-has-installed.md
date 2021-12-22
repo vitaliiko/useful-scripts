@@ -38,6 +38,18 @@ sudo apt-get update
 sudo apt-get install sublime-text
 ```
 
+Extensions:
+* [Sublime Merge](https://www.sublimemerge.com/)
+
+Preferences:
+```
+{
+	"font_size": 12,
+	"spell_check": true,
+	"dictionary": "Packages/Language - English/en_US.dic"
+}
+```
+
 #### Shutter
 ```
 sudo add-apt-repository ppa:shutter/ppa
