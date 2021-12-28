@@ -132,3 +132,8 @@ git merge origin/aRemoteBranch
 ```
 git checkout origin/master -- path/to/file
 ```
+
+#### Change file permissins and add this change to index (for Windows)
+```
+git update-index --chmod=+x gradlew
+```
