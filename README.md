@@ -10,6 +10,7 @@
 [Google Cloud](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gcloud.md)  
 [Git](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/git.md)  
 [GPG](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gpg.md)  
+[Gradle](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gradle.md)  
 [Grep](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/grep.md)  
 [Gzip](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gzip.md)  
 [JQ](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/jq.md)  
