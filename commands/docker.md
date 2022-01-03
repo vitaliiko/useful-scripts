@@ -16,6 +16,10 @@ docker images | grep 'months ago' | awk '{print $3}' | xargs docker rmi
 #### Remove dangling images
 ```
 docker rmi $(docker images -f "dangling=true" -q)  
+
+or 
+
+docker image prune
 ```
 
 #### Remove non-used volumes
