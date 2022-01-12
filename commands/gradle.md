@@ -10,5 +10,12 @@ gralde :module:build
 
 #### See dependency tree
 ```
-gradle :module -q dependencies
+gradle -q dependencies
+gradle -q :module:dependencies
+```
+
+#### Specific dependency insight
+```
+gradle dependencyInsight --dependency log4j
+gradle :module:dependencyInsight --dependency log4j
 ```
