@@ -19,3 +19,8 @@ gradle -q :module:dependencies
 gradle dependencyInsight --dependency log4j
 gradle :module:dependencyInsight --dependency log4j
 ```
+
+#### Upgrade Gradle wrapper
+```
+./gradlew wrapper --gradle-version=7.1
+```
