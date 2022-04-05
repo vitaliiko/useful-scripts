@@ -46,7 +46,14 @@ SELECT * FROM pg_stat_activity WHERE datname = '?';
 
 #### Get size of a table
 ```
-SELECT pg_size_pretty( pg_total_relation_size('?') );
+SELECT pg_size_pretty( pg_total_relation_size('table_name') );
+```
+
+#### Get size of all tables in a schema
+```
+SELECT table_schema, table_name, pg_size_pretty(pg_relation_size(quote_ident(table_name)))
+FROM information_schema.tables
+WHERE table_schema = 'public'
 ```
 
 #### Kill all connections to the DB
