@@ -73,5 +73,5 @@ For Windows aliases could be added to `C://Users/username/.bash_profile` file.
 
 To use Sublime Text in Git Shell:
 ```
-alias subl="/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
+alias subl="/c/Program\ Files/Sublime\ Text/sublime_text.exe"
 ```
