@@ -16,7 +16,7 @@ gs_service_key_file = /path/to/your/keyfile.json
 
 Or set GOOGLE_APPLICATION_CREDENTIALS env var in PowerShell:
 ```
-$env:GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/keyfile.json
+$env:GOOGLE_APPLICATION_CREDENTIALS="C:\...\keyfile.json"
 ```
 
 #### Copy file from GCS to local machine
