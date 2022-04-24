@@ -49,6 +49,13 @@ aws s3 ls s3://bucket-name/folder --recursive | sort | tail -n 1 | awk '{print $
 ```
 
 ### EC2
+
+#### Start and stop instance
+```
+aws ec2 start-instances --instance-ids $instanceId
+aws ec2 stop-instances --instance-ids $instanceId
+```
+
 #### Get public instace IP address
 ```
 aws ec2 describe-instances --instance-ids <ID> | grep PublicIpAddress | awk -F'"' '{print $4}'
