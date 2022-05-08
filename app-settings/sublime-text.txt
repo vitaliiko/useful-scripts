@@ -1,5 +1,7 @@
 {
 	"font_size": 12,
 	"spell_check": true,
-	"dictionary": "Packages/Language - English/en_US.dic"
+	"dictionary": "Packages/Language - English/en_US.dic",
+
+	"default_line_ending": "unix",
 }
