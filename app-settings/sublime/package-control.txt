@@ -1,0 +1,16 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"A File Icon",
+		"Cython+",
+		"FileDiffs",
+		"GitGutter",
+		"Package Control",
+		"Python 3",
+		"Travis YML Lint",
+	],
+	"in_process_packages":
+	[
+	],
+}
