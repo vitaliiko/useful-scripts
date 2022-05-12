@@ -11,5 +11,5 @@
 	"highlight_line": true,
 
 	"remember_full_screen": true,
-	"open_files_in_new_window": "always",
+	"open_files_in_new_window": "never",
 }
