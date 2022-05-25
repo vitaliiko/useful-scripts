@@ -14,3 +14,8 @@ curl -d "@data.json" -X POST http://localhost:3000/data
 ```
 curl -o file.txt http://...
 ```
+
+#### Make a preflight request to test CORS
+```
+curl -v -H "Access-Control-Request-Method: GET" -H "Origin: http://localhost:4200" -X OPTIONS http://localhost:8080/user
+```
