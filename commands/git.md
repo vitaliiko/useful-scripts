@@ -3,6 +3,11 @@
 git branch --merged | grep -v '*' | xargs git branch -D
 ```
 
+#### Remove all branches except specified ones
+```
+git branch | grep -vE 'master|prod|staging' | xargs git branch -D
+```
+
 #### Move last N commits to a new branch
 ```
 git branch newbranch  
