@@ -50,10 +50,11 @@ aws s3 ls s3://bucket-name/folder --recursive | sort | tail -n 1 | awk '{print $
 
 ### EC2
 
-#### Start and stop instance
+#### Start/stop instance and check its status
 ```
 aws ec2 start-instances --instance-ids $instanceId
 aws ec2 stop-instances --instance-ids $instanceId
+aws ec2 describe-instance-status --instance-ids $instanceId
 ```
 
 #### Get public instace IP address
