@@ -32,3 +32,5 @@
 * [csvkit](https://csvkit.readthedocs.io/) - is a suite of command-line tools for converting to and working with CSV, the king of tabular file formats.
 * [Free OpenVPN](https://www.freeopenvpn.org/en/)
 * [Crello](https://crello.com/) - Free graphic design tool
+* [Spring banner generator](https://devops.datenkollektiv.de/banner.txt/index.html). Most readable fonts: varsity, starwars, standard, slant, nancyj
+
