@@ -125,3 +125,8 @@ cat ids.txt | sort | uniq -c | sort -r -g
 ```
 sudo du -shx /* | sort -h
 ```
+
+#### Memory consumption analysis
+* free -h
+* top
+* htop
