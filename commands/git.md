@@ -142,3 +142,9 @@ git checkout origin/master -- path/to/file
 ```
 git update-index --chmod=+x gradlew
 ```
+
+#### Change commit author
+```
+git commit --amend --author="Author Name <email@address.com>"
+```
+
