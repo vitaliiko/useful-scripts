@@ -130,3 +130,9 @@ sudo du -shx /* | sort -h
 * free -h
 * top
 * htop
+
+#### Resolve `/bin/bash^M: bad interpreter` issue
+```
+sed -i -e 's/\r$//' your_script.sh
+```
+
