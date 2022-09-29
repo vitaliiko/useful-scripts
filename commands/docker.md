@@ -139,6 +139,12 @@ docker cp CONTAINER:SRC_PATH DEST_PATH
 docker cp SRC_PATH CONTAINER:DEST_PATH
 ```
 
+#### Rewolve `vm.max_map_count` issue in Windows
+```
+wsl -d docker-desktop
+sysctl -w vm.max_map_count=262144
+```
+
 #### Run ctop
 ```
 docker run --rm -ti --name=ctop -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest
