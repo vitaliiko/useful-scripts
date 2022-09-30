@@ -2,6 +2,10 @@
 #### Install Docker and docker-compose
 Use [the script](https://github.com/vitaliykobrin/useful-scripts/blob/master/scripts/install-docker.sh)
 
+#### Login
+```
+docker login -u $username -p $password
+```
 
 #### Remove old non-running containers
 ```
