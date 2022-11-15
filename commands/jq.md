@@ -17,7 +17,7 @@ jq -r '.users | map(.id), map(.name) | @csv' | csvtool transpose -
 
 #### To convert YAML to JSON
 ```
-yq  -o=json users.yaml > users.json
+yq -o=json users.yaml > users.json
 ```
 
 ### Users JSON
