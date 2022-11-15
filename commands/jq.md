@@ -1,4 +1,4 @@
-### JQ
+### JQ and YQ
 
 #### To save curl output as a formatted JSON
 ```
@@ -10,9 +10,14 @@ curl localhost/resource | jq . > users.json
 cat users.json | jq '.users[] .id'
 ```
 
-#### To convert users json into csv
+#### To convert users JSON into CSV
 ```
 jq -r '.users | map(.id), map(.name) | @csv' | csvtool transpose -
+```
+
+#### To convert YAML to JSON
+```
+yq  -o=json users.yaml > users.json
 ```
 
 ### Users JSON
