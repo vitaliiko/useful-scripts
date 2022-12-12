@@ -1,6 +1,6 @@
 #### Replace first line with string
 ```
-sed "1s=.*=String to be inserted=" $filename > $new_filename
+sed -i "1 s/.*/String to be inserted/" file.txt
 ```
 
 #### Remove first line of a file
