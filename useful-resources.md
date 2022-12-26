@@ -18,7 +18,6 @@
 * [Ethereal](https://ethereal.email/) - Ethereal is a fake SMTP service
 * [SonarQube](https://www.sonarqube.org/) - Code Quality and Security
 * [FROM:latest](https://www.fromlatest.io/#/) - An opinionated Dockerfile linter
-* [Combined typographic layouts](https://shvetsgroup.com/ru/blog/typography-symbols-layouts) - Combined typographic Russian and Ukrainian layouts for Windows
 * [Emojipedia](https://emojipedia.org/) - All emoji names are official character and/or CLDR names and code points listed as part of the Unicode Standard
 * [Quicklink](https://github.com/GoogleChromeLabs/quicklink) - Faster subsequent page-loads by prefetching in-viewport links during idle time
 * [Imageproxy](https://willnorris.com/go/imageproxy) - caching image proxy server written in go
@@ -33,4 +32,6 @@
 * [Free OpenVPN](https://www.freeopenvpn.org/en/)
 * [Crello](https://crello.com/) - Free graphic design tool
 * [Spring banner generator](https://devops.datenkollektiv.de/banner.txt/index.html). Most readable fonts: varsity, starwars, standard, slant, nancyj
+* [JMH](https://github.com/openjdk/jmh) - Java Microbenchmark Harness is a Java harness for building, running, and analysing nano/micro/milli/macro benchmarks written in Java and other languages targeting the JVM
+
 
