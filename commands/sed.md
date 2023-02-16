@@ -67,3 +67,9 @@ sed 's/[A-Z]/\L&/g'
 ```
 sed -i 1s/^/word/ file.txt
 ```
+
+#### Replace CRLF with LF
+```
+sed -i $'s/\r$//' file.txt
+```
+
