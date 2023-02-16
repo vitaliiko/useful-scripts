@@ -135,4 +135,7 @@ sudo du -shx /* | sort -h
 ```
 sed -i -e 's/\r$//' your_script.sh
 ```
-
+#### Find all files with a certain extention in a directory recurcively
+```
+ find . | grep \\.txt
+```
