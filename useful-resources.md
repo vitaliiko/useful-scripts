@@ -40,3 +40,4 @@
 * [AI Tool Master List](https://share-docs.clickup.com/25598832/d/h/rd6vg-14247/0b79ca1dc0f7429/rd6vg-12207)
 * [Midjourney](https://discord.com/channels/662267976984297473/@home) - AI image generator
 * [RestorePhotos](https://www.restorephotos.io/?ref=futurepedia)
+* [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
