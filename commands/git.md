@@ -148,3 +148,9 @@ git update-index --chmod=+x gradlew
 git commit --amend --author="Author Name <email@address.com>"
 ```
 
+#### Remove files from commit
+```
+git reset --soft HEAD~1
+git checkout file.txt
+git commit
+```
