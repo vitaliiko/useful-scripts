@@ -13,3 +13,18 @@ or
 Get-Process -Id (Get-NetUDPEndpoint -LocalPort 8080).OwningProcess
 Stop-Process -Id <ID>
 ```
+
+### To see a list of all WiFi networks ever connected
+```
+netsh wlan show profile
+```
+
+### To see WiFi network details
+```
+netsh wlan show profile "network_name"
+```
+
+### To see WiFi network details with password
+```
+netsh wlan show profile "network_name" key=clear
+```
