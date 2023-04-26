@@ -133,7 +133,7 @@ git fetch origin aRemoteBranch
 git merge origin/aRemoteBranch
 ```
 
-#### Restore file version from remove branch
+#### Restore file version from remote branch
 ```
 git checkout origin/master -- path/to/file
 ```

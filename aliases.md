@@ -58,7 +58,8 @@ git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --grap
 git config --global alias.last 'log -1 HEAD'  
 git config --global alias.who "shortlog -n -s --no-merges"  
 git config --global alias.undo "reset HEAD~1"  
-git config --global alias.aj "add *.java"
+git config --global alias.undom = "reset --hard HEAD~1"  
+git config --global alias.aj "add *.java"  
 ```  
 Add to `[alias]` section of `.gitconfig` file:  
 ```
@@ -66,6 +67,7 @@ ri = "!ri() { git rebase -i HEAD~$1; }; ri" // interactively rebase N last commi
 la = "!f() { git config -l | grep alias | cut -c 7-; }; f" // show list of aliases 
 nb = "!f() { git checkout -b feature/$1; }; f" // create new branch and checkout to it 
 fpush = "!f() { git push -u origin $(git rev-parse --abbrev-ref HEAD); }; f" // push current branch for the first time 
+clean = "!f() { git branch --merged | grep -v '*' | xargs git branch -D; }; f" // remove all merged branches except current one 
 ```
 
 ### Windows
