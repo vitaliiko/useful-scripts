@@ -41,3 +41,4 @@
 * [Midjourney](https://discord.com/channels/662267976984297473/@home) - AI image generator
 * [RestorePhotos](https://www.restorephotos.io/?ref=futurepedia)
 * [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
+* [AI Image Classification & Authenticity Detection](https://aiornot.optic.xyz)
