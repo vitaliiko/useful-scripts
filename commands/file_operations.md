@@ -95,7 +95,12 @@ find -name "* *" -type f | rename 's/ /_/g'
 cat file.csv | perl -pe 's/,(?![\s])/|/g' > file.dat
 ```
 
-#### Remove file header
+#### Remove lines at the top
 ```
 cat input.txt | tail -n +2 > result.txt
+```
+
+#### Remove lines at the bottom
+```
+cat input.txt | head -n -10 > result.txt
 ```
