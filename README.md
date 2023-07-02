@@ -17,6 +17,7 @@
 * [Grep](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/grep.md)
 * [Gzip](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gzip.md)
 * [JQ](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/jq.md)
+* [k8s](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/k8s.md)
 * [Shell](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/linux_shell.md)
 * [PowerShell](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/power_shell.md)
 * [sed](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/sed.md)
