@@ -20,3 +20,18 @@ kubectl describe pod podname
 ```
 kubectl exec -it podname -- /bin/bash
 ```
+
+### Create/update resources
+
+#### Craete pod
+```
+kubectl run nginx --image nginx
+```
+To crate a pod and write its definition into a file
+```
+kubectl run nginx --image nginx --dry-run=client -o yaml > nginx-pod.yaml
+```
+To edit created pod
+```
+kubectl edit pod nginx
+```
