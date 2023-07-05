@@ -53,3 +53,7 @@ kubectl replace -f replicaset.yaml
 kubectl create deployment mydeployment --replicas=3 --image=nginx
 ```
 
+#### Switch namespace
+```
+kubectl config set-contenxt $(kubectl config current-context) --namespace=dev
+```
