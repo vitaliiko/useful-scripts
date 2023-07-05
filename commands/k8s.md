@@ -1,5 +1,7 @@
 ### k8s
 
+[kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+
 #### Get resources
 Get all pods, deployments and services:
 ```
@@ -44,5 +46,10 @@ kubectl scale --replicas=3 replicaset replicaset-name
 To apply changes in replica set definition file
 ```
 kubectl replace -f replicaset.yaml
+```
+
+#### Create deployment
+```
+kubectl create deployment mydeployment --replicas=3 --image=nginx
 ```
 
