@@ -38,7 +38,7 @@ kubectl exec -it podname -- /bin/bash
 #### Craete pod
 ```
 kubectl run nginx --image nginx
-kubectl run nginx --image nginx --dry-run=client -o yaml > pod.yaml
+kubectl run nginx --image nginx --labels=tier=fe
 ```
 
 To crate a pod and write its definition into a file
