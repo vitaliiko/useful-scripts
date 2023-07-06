@@ -8,9 +8,14 @@ Get all pods, deployments and services:
 kubectl get pods,svc,deploy
 ```
 
-Get all resources:
+Get all resources in a specific namespace:
 ```
-kubectl get all
+kubectl get all -n=space
+```
+
+Get all resources in all namespaces:
+```
+kubectl get all -A
 ```
 
 Describe resource:
@@ -51,6 +56,17 @@ kubectl replace -f replicaset.yaml
 #### Create deployment
 ```
 kubectl create deployment mydeployment --replicas=3 --image=nginx
+```
+
+#### Create service
+```
+kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml > service.yaml
+kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=client -o yaml > service.yaml
+```
+To create service with selectors
+```
+kubectl expose pod redis --port=6379 --name redis-service --dry-run=client -o yaml > service.yaml
+kubectl expose pod nginx --port=80 --name nginx-service --type=NodePort --dry-run=client -o yaml > service.yaml
 ```
 
 #### Switch namespace
