@@ -28,6 +28,12 @@ Describe resource:
 kubectl describe pod podname
 ```
 
+#### Namespace
+To switch default namespace
+```
+kubectl config set-contenxt $(kubectl config current-context) --namespace=dev
+```
+
 #### Get a shell of a container 
 ```
 kubectl exec -it podname -- /bin/bash
@@ -35,7 +41,7 @@ kubectl exec -it podname -- /bin/bash
 
 ### Create/update resources
 
-#### Craete pod
+#### Pod
 ```
 kubectl run nginx --image nginx
 kubectl run nginx --image nginx --labels=tier=fe
@@ -56,7 +62,7 @@ To delete running pod and create a new one instead
 kubectl replace --forse -f pod.yaml
 ```
 
-#### Update replica set
+#### ReplicaSet
 To scale replicas
 ```
 kubectl scale --replicas=3 replicaset replicaset-name
@@ -67,12 +73,12 @@ To apply changes in replica set definition file
 kubectl replace -f replicaset.yaml
 ```
 
-#### Create deployment
+#### Deployment
 ```
 kubectl create deployment mydeployment --replicas=3 --image=nginx
 ```
 
-#### Create service
+#### Service
 ```
 kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml > service.yaml
 kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=client -o yaml > service.yaml
@@ -89,7 +95,8 @@ To create a pod with a service
 kubectl run nginx --image nginx --port=80 --expose=true
 ```
 
-#### Switch namespace
+#### ConfigMap
+To create config map
 ```
-kubectl config set-contenxt $(kubectl config current-context) --namespace=dev
+kubectl create cm app-config --from-literal=APP_PROP=value
 ```

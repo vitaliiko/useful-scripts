@@ -1,0 +1,29 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+  labels:
+    name: myapp
+spec:
+  containers:
+    - name: myapp-container
+      image: my-app-image
+      ports:
+        - containerPort: 8081
+      envFrom:
+        - configMapRef:
+            name: app-config
+      env:
+        - name: APP_PROP
+          valueFrom:
+            configMapKeyRef:
+              name: app-config
+              key: PROP1
+      volumeMounts:
+        - mountPath: /usr/src/app/images
+          name: images-volume
+  volumes:
+    - name: images-volume
+      emptyDir:
+        sizeLimit: 100Mi
