@@ -51,6 +51,11 @@ To edit created pod
 kubectl edit pod nginx
 ```
 
+To delete running pod and create a new one instead
+```
+kubectl replace --forse -f pod.yaml
+```
+
 #### Update replica set
 To scale replicas
 ```
