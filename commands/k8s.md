@@ -99,4 +99,12 @@ kubectl run nginx --image nginx --port=80 --expose=true
 To create config map
 ```
 kubectl create cm app-config --from-literal=APP_PROP=value
+kubectl create cm app-config --from-file=app.properties
+```
+
+#### Secret
+To create secret
+```
+kubectl create secret generic app-secret --from-literal=APP_PROP=value
+kubectl create secret generic app-secret --from-file=app.properties
 ```

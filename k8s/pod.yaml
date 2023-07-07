@@ -14,12 +14,19 @@ spec:
       envFrom:
         - configMapRef:
             name: app-config
+        - secretRef:
+            name: app-secret
       env:
         - name: APP_PROP
           valueFrom:
             configMapKeyRef:
               name: app-config
               key: PROP1
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: app-secret
+              key: DB_PASS
       volumeMounts:
         - mountPath: /usr/src/app/images
           name: images-volume
