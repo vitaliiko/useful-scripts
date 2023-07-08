@@ -34,3 +34,17 @@ spec:
     - name: images-volume
       emptyDir:
         sizeLimit: 100Mi
+  tolerations:
+    - key: app
+      value: myapp
+      operator: Equal
+      effect: NoSchedule
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+          - matchExpressions:
+             - key: size
+               operator: In
+               values: 
+                - large

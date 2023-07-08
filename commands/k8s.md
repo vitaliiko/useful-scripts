@@ -28,15 +28,27 @@ Describe resource:
 kubectl describe pod podname
 ```
 
-#### Namespace
-To switch default namespace
+#### Context & Namespace
+To set default context
 ```
-kubectl config set-contenxt $(kubectl config current-context) --namespace=dev
+kubectl config use-context dev
 ```
 
-#### Get a shell of a container 
+To set default namespace
+```
+kubectl config set-context contextname --namespace=dev
+kubectl config set-context --current --namespace=dev
+```
+
+#### Inside a container
+To get a shell of a container 
 ```
 kubectl exec -it podname -- /bin/bash
+```
+
+To get a current user of a container
+```
+kubectl exec podname -- whoami
 ```
 
 ### Create/update resources
@@ -57,9 +69,14 @@ To edit created pod
 kubectl edit pod nginx
 ```
 
-To delete running pod and create a new one instead
+To get a definition of existing pod
 ```
-kubectl replace --forse -f pod.yaml
+kubectl get pod nginx -o yaml > pod.yaml
+```
+
+To delete running pod and re-create it with an updated definition
+```
+kubectl replace --force -f pod.yaml
 ```
 
 #### ReplicaSet
@@ -107,4 +124,31 @@ To create secret
 ```
 kubectl create secret generic app-secret --from-literal=APP_PROP=value
 kubectl create secret generic app-secret --from-file=app.properties
+```
+
+#### ServiceAccount
+To create service account
+```
+kubectl create sa service-account-name
+```
+
+To assign a token to a service account
+```
+kubectl create token service-account-name
+```
+
+#### Node
+To create a taint
+```
+kubectl create taint node nodename app=appname:NoSchedule
+```
+
+To remove a taint
+```
+kubectl create taint node nodename app=appname:NoSchedule-
+```
+
+To add a label
+```
+kubectl label node nodename key=value
 ```

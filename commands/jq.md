@@ -35,3 +35,10 @@ yq -o=json users.yaml > users.json
   ]
 }
 ```
+
+### JWT
+To parse JWT
+```
+echo <JWT> | jq -R 'split(".") | select(length > 0) | .[0],.[1] | @base64d | fromjson'
+jq -R 'split(".") | select(length > 0) | .[0],.[1] | @base64d | fromjson' <<< <JWT>
+```
