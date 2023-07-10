@@ -3,29 +3,34 @@
 [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
 #### Get resources
-Get all pods, deployments and services:
+To get all pods, deployments and services
 ```
 kubectl get pods,svc,deploy
 ```
 
-Get all resources in a specific namespace:
+To get all resources in a specific namespace
 ```
 kubectl get all -n=space
 ```
 
-Get all resources in all namespaces:
+To get all resources in all namespaces
 ```
 kubectl get all -A
 ```
 
-Get resource with labels
+To get resource with labels and watch for changes
 ```
-kubectl get pods --show-labels
+kubectl get pods --show-labels --watch
 ```
 
-Describe resource:
+To describe resource
 ```
 kubectl describe pod podname
+```
+
+To get pod definition
+```
+kubectl get pod podname -o yaml > pod.yaml
 ```
 
 #### Context & Namespace
@@ -38,6 +43,17 @@ To set default namespace
 ```
 kubectl config set-context contextname --namespace=dev
 kubectl config set-context --current --namespace=dev
+```
+
+#### Monitoring
+To see CPU and memory consumption by pods
+```
+kubectl top pod
+```
+
+To get definitions for metrics service
+```
+ git clone https://github.com/kodekloudhub/kubernetes-metrics-server.git
 ```
 
 #### Inside a container
