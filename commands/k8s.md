@@ -33,6 +33,22 @@ To get pod definition
 kubectl get pod podname -o yaml > pod.yaml
 ```
 
+#### Search for resources
+To get pods which are in prod or in dev envs
+```
+kubectl get pods --selector env=prod --selector env=dev
+```
+
+To get all resource related to prod env and frontend
+```
+kubectl get all --selector env=prod,tier=frontend
+```
+
+To count resources
+```
+kubectl get pods --selector env=prod --no-headers | wc -l
+```
+
 #### Context & Namespace
 To set default context
 ```
