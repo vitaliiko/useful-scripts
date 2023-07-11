@@ -123,8 +123,25 @@ kubectl replace -f replicaset.yaml
 ```
 
 #### Deployment
+To create a deployment
 ```
 kubectl create deployment mydeployment --replicas=3 --image=nginx
+```
+
+To change deployment's image
+```
+kubectl set image deployment/mydeploy container-name=image:latest
+```
+
+To rollback changes
+```
+kubectl rollout undo deployment/mydeploy
+```
+
+To see deployment status and history
+```
+kubectl rollout status deployment/mydeploy
+kubectl rollout history deployment/mydeploy
 ```
 
 #### Service
