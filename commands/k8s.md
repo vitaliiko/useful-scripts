@@ -1,6 +1,7 @@
 ### k8s
 
-[kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+[Kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+[Kubectl Reference Docs](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-strong-getting-started-strong-)
 
 #### Get resources
 To get all pods, deployments and services
@@ -159,6 +160,12 @@ kubectl expose pod nginx --port=80 --name nginx-service --type=NodePort --dry-ru
 To create a pod with a service
 ```
 kubectl run nginx --image nginx --port=80 --expose=true
+```
+
+#### Ingress
+To create ingress
+```
+kubectl create ingress ingress-name --rule="host/path=service:port"
 ```
 
 #### ConfigMap
