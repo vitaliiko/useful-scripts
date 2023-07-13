@@ -84,6 +84,32 @@ To get a current user of a container
 kubectl exec podname -- whoami
 ```
 
+#### Pod / container logs
+Get current logs of a pod
+```
+kubectl logs nginx
+```
+
+Get logs of previous terminated nginx container from pod web-1
+```
+kubectl logs -p -c nginx web-1
+```
+
+Stream logs of nginx container from pod web-1
+```
+kubectl logs -f -c nginx web-1
+```
+
+Display only the most recent 20 lines of logs
+```
+kubectl logs --tail=20 nginx
+```
+
+Show all logs from pod nginx written in the last hour
+```
+kubectl logs --since=1h nginx
+```
+
 ### Create/update resources
 
 #### Pod
