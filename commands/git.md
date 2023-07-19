@@ -1,3 +1,10 @@
+### Git
+
+#### Checkout to previous branch
+```
+git checkout -
+```
+
 #### Remove all merged branches except current one
 ```
 git branch --merged | grep -v '*' | xargs git branch -D
