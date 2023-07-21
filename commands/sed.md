@@ -28,7 +28,7 @@ sed -i '1d;$d' $filename
 sed -i '1 i\new_line' $filename
 ```
 
-#### Replace occuranses of a string
+#### Replace occurrences of a string
 ```
 sed s/"string_to_replace"//g file.txt
 ```
@@ -41,6 +41,21 @@ sed s/string_to_replace/new_string/g file.txt
 #### Replace string with URL
 ```
 sed s,placeholder,http://example.com,g file.txt
+```
+
+#### Insert line after the match
+```
+sed '/^key=.*/a after=value' file.txt
+```
+
+#### Insert line before the match
+```
+sed '/^key=.*/i before=value' file.txt
+```
+
+#### Insert multiple lines after the match
+```
+sed '/^key=.*/i before1=value\nbefore2=value' file.txt
 ```
 
 #### Append each line with a string ignoring empty lines
