@@ -52,6 +52,27 @@ ffmpeg -i song.flac -ab 320k -map_metadata 0 -id3v2_version 3 song.mp3
 
 ```
 
+#### Convert .xlsx to .csv
+To convert first sheet 
+```bash
+xlsx2csv input.xlsx > output.csv
+```
+
+To convert Nth sheet 
+```bash
+xlsx2csv input.xlsx -s N > output.csv
+```
+
+To convert all sheets and place them in a single csv file
+```bash
+xlsx2csv --all input.xlsx > output.csv
+```
+
+To convert all sheets and place them in separate csv files
+```bash
+xlsx2csv --all input.xlsx output_dir
+```
+
 #### Print first lines of all files without file names
 ```
 head -n1 -q *.txt
