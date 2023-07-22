@@ -30,10 +30,20 @@ spec:
       volumeMounts:
         - mountPath: /usr/src/app/images
           name: images-volume
+        - mountPath: /usr/src/app/logs
+          name: log-volume
+        - mountPath: /usr/src/app/data
+          name: data-volume
   volumes:
     - name: images-volume
       emptyDir:
         sizeLimit: 100Mi
+    - name: log-volume
+      persistentVolumeClaim:
+        claimName: claim-log-1
+    - name: data-volume
+      persistentVolumeClaim:
+        claimName: gcp-data
   tolerations:
     - key: app
       value: myapp
