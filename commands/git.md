@@ -181,3 +181,8 @@ git log --diff-filter=A -- "*filename*"
 ```
 git log --diff-filter=D -- "*filename*"
 ```
+
+#### Show commit changes
+```
+git show <commit_hash>
+```
