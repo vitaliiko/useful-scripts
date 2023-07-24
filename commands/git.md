@@ -161,3 +161,23 @@ git reset --soft HEAD~1
 git checkout file.txt 
 git commit
 ```
+
+#### Show all commits with a specified file
+```
+git log --all -- "<full_file_path>"
+```
+
+#### Show all commits with a file name pattern
+```
+git log --all -- "*filename*"
+```
+
+#### Show commit where a file was added
+```
+git log --diff-filter=A -- "*filename*"
+```
+
+#### Show commit where a file was deleted
+```
+git log --diff-filter=D -- "*filename*"
+```
