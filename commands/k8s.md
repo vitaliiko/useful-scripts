@@ -34,6 +34,17 @@ To get pod definition
 kubectl get pod podname -o yaml > pod.yaml
 ```
 
+#### Settings overview
+To view k8s default config
+```
+kubectl config view
+```
+
+To view kube API server settings
+```
+kubectl describe pod kube-apiserver-controlplane -n kube-system
+```
+
 #### Search for resources
 To get pods which are in prod or in dev envs
 ```
@@ -54,6 +65,11 @@ kubectl get pods --selector env=prod --no-headers | wc -l
 To set default context
 ```
 kubectl config use-context dev
+```
+
+To set default context from non-default kube config
+```
+kubectl config use-context dev --konfigfile=/path/config
 ```
 
 To set default namespace
@@ -233,4 +249,12 @@ kubectl create taint node nodename app=appname:NoSchedule-
 To add a label
 ```
 kubectl label node nodename key=value
+```
+
+#### Check Access
+```
+kubectl auth can-i create deployments
+kubectl auth can-i delete nodes
+kubectl auth can-i create pods --as username
+kubectl auth can-i create pods --as username --namespace test
 ```
