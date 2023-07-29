@@ -34,7 +34,17 @@ To get pod definition
 kubectl get pod podname -o yaml > pod.yaml
 ```
 
+To see info about a resource
+```
+kubectl explain <resource>
+```
+
 #### Settings overview
+To view all k8s resources, their short names and versions
+```
+kubects api-resources
+```
+
 To view k8s default config
 ```
 kubectl config view
@@ -43,6 +53,20 @@ kubectl config view
 To view kube API server settings
 ```
 kubectl describe pod kube-apiserver-controlplane -n kube-system
+```
+
+To view arguments a kube-apiserver is running with
+```
+ps -ef | grep kube-apiserver
+```
+or
+```
+kubectl exec -it kube-apiserver-controlplane -n kube-system -- kube-apiserver -h  
+```
+
+To check kube-apiserver status
+```
+kubectl get pod -n kube-system
 ```
 
 #### Search for resources
@@ -224,6 +248,11 @@ kubectl create secret generic app-secret --from-literal=APP_PROP=value
 kubectl create secret generic app-secret --from-file=app.properties
 ```
 
+To create a TLS secret
+```
+kubectl create secret tls tls-secret --cert=/path/tls.crt --key=/path/tls.key
+```
+
 #### ServiceAccount
 To create service account
 ```
@@ -257,4 +286,15 @@ kubectl auth can-i create deployments
 kubectl auth can-i delete nodes
 kubectl auth can-i create pods --as username
 kubectl auth can-i create pods --as username --namespace test
+```
+
+### Kube API
+To start Kube proxy
+```
+kubectl proxy 8001&
+```
+
+Then to get a list of all available APIs
+```
+curl http://localhost:8001/apis
 ```
