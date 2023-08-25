@@ -200,6 +200,11 @@ To change deployment's image
 kubectl set image deployment/mydeploy container-name=image:latest
 ```
 
+To scale deployment
+```
+kubectl scale --replicas=3 deployment deployment-name
+```
+
 To rollback changes
 ```
 kubectl rollout undo deployment/mydeploy
