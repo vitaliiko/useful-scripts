@@ -22,6 +22,8 @@ kubectl get all -A
 To get resource with labels and watch for changes
 ```
 kubectl get pods --show-labels --watch
+or
+watch kubectl get pods --show-labels
 ```
 
 To describe resource
