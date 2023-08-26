@@ -205,7 +205,7 @@ kubectl create deployment mydeployment --replicas=3 --image=nginx
 
 To change deployment's image
 ```
-kubectl set image deployment/mydeploy container-name=image:latest
+kubectl set image deployment mydeploy container-name=image:latest
 ```
 
 To scale deployment
@@ -215,13 +215,13 @@ kubectl scale --replicas=3 deployment deployment-name
 
 To rollback changes
 ```
-kubectl rollout undo deployment/mydeploy
+kubectl rollout undo deployment mydeploy
 ```
 
 To see deployment status and history
 ```
-kubectl rollout status deployment/mydeploy
-kubectl rollout history deployment/mydeploy
+kubectl rollout status deployment mydeploy
+kubectl rollout history deployment mydeploy
 ```
 
 To add a label
