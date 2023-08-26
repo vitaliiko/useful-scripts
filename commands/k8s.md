@@ -258,6 +258,11 @@ To create a TLS secret
 kubectl create secret tls tls-secret --cert=/path/tls.crt --key=/path/tls.key
 ```
 
+To create Docker repository secret
+```
+kubectl create secret docker-registry secret-name --docker-server=https://index.docker.io/v1/ --docker-username=username --docker-password=password --docker-email=email@email.com
+```
+
 #### ServiceAccount
 To create service account
 ```
