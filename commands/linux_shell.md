@@ -139,3 +139,8 @@ sed -i -e 's/\r$//' your_script.sh
 ```
  find . | grep \\.txt
 ```
+
+#### Check access to some endpoint
+```
+nc -v -z -w 2 localhost 80
+```
