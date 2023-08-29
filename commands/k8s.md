@@ -330,3 +330,13 @@ Then to get a list of all available APIs
 ```
 curl http://localhost:8001/apis
 ```
+
+To get list of resources in core API group
+```
+curl http://localhost:8001/api/v1
+```
+
+To get all resources in named API groups
+```
+curl http://localhost:8001/apis/apps/v1
+```
