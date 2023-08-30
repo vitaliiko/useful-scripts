@@ -55,6 +55,11 @@ To view k8s default config
 kubectl config view
 ```
 
+To view contexts
+```
+kubectl config get-contexts
+```
+
 To view kube API server settings
 ```
 kubectl describe pod kube-apiserver-controlplane -n kube-system
