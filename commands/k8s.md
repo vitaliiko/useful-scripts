@@ -47,7 +47,7 @@ kubectl explain <resource>
 #### Settings overview
 To view all k8s resources, their short names and versions
 ```
-kubects api-resources
+kubectl api-resources
 ```
 
 To view k8s default config
