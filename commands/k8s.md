@@ -134,6 +134,11 @@ To get a current user of a container
 kubectl exec podname -- whoami
 ```
 
+To get a list of container's environment variables
+```
+kubectl exec podname -- printenv
+```
+
 #### Pod / container logs
 Get current logs of a pod
 ```
