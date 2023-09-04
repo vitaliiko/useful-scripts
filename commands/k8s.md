@@ -332,6 +332,11 @@ To make node schedulable again
 kubectl uncordon nodename
 ```
 
+To copy files to node
+```
+scp /folder/* nodename:/folder
+```
+
 #### Check Access
 ```
 kubectl auth can-i create deployments
