@@ -309,17 +309,27 @@ kubectl create token service-account-name
 #### Node
 To create a taint
 ```
-kubectl create taint node nodename app=appname:NoSchedule
+kubectl taint node nodename app=appname:NoSchedule
 ```
 
 To remove a taint
 ```
-kubectl create taint node nodename app=appname:NoSchedule-
+kubectl taint node nodename app=appname:NoSchedule-
 ```
 
 To add a label
 ```
 kubectl label node nodename key=value
+```
+
+To make node unschedulable
+```
+kubectl cordon nodename
+```
+
+To make node schedulable again
+```
+kubectl uncordon nodename
 ```
 
 #### Check Access
