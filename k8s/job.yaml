@@ -1,4 +1,3 @@
----
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -6,10 +5,14 @@ metadata:
 spec:
   completions: 3
   parallelism: 3
+  backoffLimit: 10 # amount of retries when job is considered failed
   template:
     spec:
       containers:
       - name: myapp-container
         image: my-app-image
+      command:
+        - sh
+        - -c
+        - echo Job is working
       restartPolicy: Never
-  backoffLimit: 10

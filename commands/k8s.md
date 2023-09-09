@@ -156,6 +156,7 @@ kubectl logs --since=1h nginx
 ```
 kubectl run nginx --image nginx
 kubectl run nginx --image nginx --labels=tier=fe
+kubectl run nginx --image nginx -l tier=fe
 ```
 
 To crate a pod and write its definition into a file
@@ -176,6 +177,11 @@ kubectl get pod nginx -o yaml > pod.yaml
 To delete running pod and re-create it with an updated definition
 ```
 kubectl replace --force -f pod.yaml
+```
+
+To delete all pods with a label
+```
+kubectl delete pod -l label=value
 ```
 
 #### ReplicaSet
@@ -216,6 +222,17 @@ kubectl rollout status deployment/mydeploy
 kubectl rollout history deployment/mydeploy
 ```
 
+To add a label
+```
+kubectl label deploy deployname key=value
+```
+
+#### Job
+To create a job
+```
+kubectl create job --image=imagename
+```
+
 #### Service
 ```
 kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml > service.yaml
@@ -249,7 +266,7 @@ kubectl create cm app-config --from-file=app.properties
 #### Secret
 To create secret
 ```
-kubectl create secret generic app-secret --from-literal=APP_PROP=value
+kubectl create secret generic app-secret --from-literal=APP_PROP_1=value1 --from-literal=APP_PROP_2=value2
 kubectl create secret generic app-secret --from-file=app.properties
 ```
 
