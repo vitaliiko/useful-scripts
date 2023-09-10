@@ -17,31 +17,41 @@
 
 ### Insert mode
 
-`i` – Insert before the cursor
-`a` – Insert after the cursor
-`I` – Insert at the beginning of the line, this is useful when you are in the middle of the line.
-`A` – Insert at the end of the line
-`o` – Open a new line below the current line
-`O` – Append a new line above the current line
-`ea` – Insert at the end of the word
+#### Insert a text
 
-`yy` – yank (copy) a line
-`p/P` – Paste after cursor/ put before cursor
-`dd` – delete a line
-`dw` – delete the word
+`i` – Insert before the cursor  
+`a` – Insert after the cursor  
+`I` – Insert at the beginning of the line, this is useful when you are in the middle of the line.  
+`A` – Insert at the end of the line  
+`o` – Open a new line below the current line  
+`O` – Append a new line above the current line  
+`ea` – Insert at the end of the word  
 
-`/pattern` – To search a given pattern
-`?pattern` – To search backward a given pattern
-`n` – To repeat search
-`N` – To repeat backward search
-`:%s/old-pattern/new-pattern/g` – Replace all old formats with the new format across the file
-`:s/old-pattern/new-pattern/g` – Replace all old formats with the new format in the current line
-`:%s/old-pattern/new-pattern/gc` – Replace all old formats with the new format across the file with confirmations
+#### Copy, Paste and Delete a Line
 
-`u` – Undo the changes
-`Ctrl+r` – Redo the changes
-`.` – Repeat last command
+`yy` – yank (copy) a line  
+`p/P` – Paste after cursor/ put before cursor  
+`dd` – delete a line  
+`dw` – delete the word  
 
-`:w` – Save the changes but don’t exit
-`:wq` – Write and quit
-`:q!` – Force quit
+#### Search and Replace Pattern
+
+`/pattern` – To search a given pattern  
+`?pattern` – To search backward a given pattern  
+`n` – To repeat search  
+`N` – To repeat backward search  
+`:%s/old-pattern/new-pattern/g` – Replace all old formats with the new format across the file  
+`:s/old-pattern/new-pattern/g` – Replace all old formats with the new format in the current line  
+`:%s/old-pattern/new-pattern/gc` – Replace all old formats with the new format across the file with confirmations  
+
+#### Undo/Redo/Repeat
+
+`u` – Undo the changes  
+`Ctrl+r` – Redo the changes  
+`.` – Repeat last command  
+
+#### Saving and Exiting
+
+`:w` – Save the changes but don’t exit  
+`:wq` – Write and quit  
+`:q!` – Force quit  
