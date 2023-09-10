@@ -1,21 +1,21 @@
-### Vim
+## Vim
 
-#### Normal mode
+### Normal mode
 
-`G` – Go to the last line of the file
-`gg` – Go to the first line of the file
-`$` – Go to the end of line.
-`0` (zero) – Go to the beginning of line.
-`w` – Jump by start of words
-`W` – Jump by words (spaces separate words)
-`b` – Jump backward by words
-`B` – Jump backward by words (spaces separate words)
-`PgDn Key` – Move down page-wise
-`PgUp Key` – Move up page-wise
-`Ctrl+d` – Move half-page down
-`Ctrl+u` – Move half-page up
+`G` – Go to the last line of the file  
+`gg` – Go to the first line of the file  
+`$` – Go to the end of line  
+`0` (zero) – Go to the beginning of line  
+`w` – Jump by start of words  
+`W` – Jump by words (spaces separate words)  
+`b` – Jump backward by words  
+`B` – Jump backward by words (spaces separate words)  
+`PgDn Key` – Move down page-wise  
+`PgUp Key` – Move up page-wise  
+`Ctrl+d` – Move half-page down  
+`Ctrl+u` – Move half-page up  
 
-#### Insert mode
+### Insert mode
 
 `i` – Insert before the cursor
 `a` – Insert after the cursor
