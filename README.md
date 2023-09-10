@@ -25,6 +25,6 @@
 * [SSH](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/ssh.md)
 * [SQL](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/sql.md)
 * [tar](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/tar.md)
-* [Vim](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/vim_commands.jpg)
+* [Vim](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/vim.md)
 * [wget](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/wget.md)
 * [xargs](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/xargs.md)
