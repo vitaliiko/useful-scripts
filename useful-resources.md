@@ -35,6 +35,7 @@
 * [JMH](https://github.com/openjdk/jmh) - Java Microbenchmark Harness is a Java harness for building, running, and analysing nano/micro/milli/macro benchmarks written in Java and other languages targeting the JVM
 * [HTTPie](https://httpie.io/docs/cli/main-features) - is a command-line HTTP client
 * [Web3 Security](https://github.com/Anugrahsr/Awesome-web3-Security)
+8 [Whimsical](https://whimsical.com/) - The hub for visual collaboration
 
 ### AI
 * [AI Tool Master List](https://share-docs.clickup.com/25598832/d/h/rd6vg-14247/0b79ca1dc0f7429/rd6vg-12207)
