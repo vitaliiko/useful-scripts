@@ -1,11 +1,14 @@
+## Docker
 
-#### Install Docker and docker-compose
+### Install Docker and docker-compose
 Use [the script](https://github.com/vitaliykobrin/useful-scripts/blob/master/scripts/install-docker.sh)
 
-#### Login
+### Login
 ```
 docker login -u $username -p $password
 ```
+
+### Clean up
 
 #### Remove old non-running containers
 ```
@@ -56,6 +59,8 @@ docker rm $(docker ps -aq)
 docker rmi $(docker images -q ubuntu)
 ```
 
+### Containers
+
 #### Run container and mount current folder to it
 ```
 docker run -it --rm -w /app -v $(pwd):/app image bash
@@ -75,7 +80,7 @@ docker ps --format '{{.Names}}'
 ```
 docker inspect -f "{{ .Mounts }}" <container>
 ```
-#### Run ontainer with ulimit parameter in case "file-descriptors limit is too low" or something similar happend
+#### Run container with ulimit parameter in case "file-descriptors limit is too low" or something similar happened
 ```
 docker run --ulimit nofile=65535:65535 image_name
 ```
@@ -143,7 +148,9 @@ docker cp CONTAINER:SRC_PATH DEST_PATH
 docker cp SRC_PATH CONTAINER:DEST_PATH
 ```
 
-#### Rewolve `vm.max_map_count` issue in Windows
+### Tools
+
+#### Resolve `vm.max_map_count` issue in Windows
 ```
 wsl -d docker-desktop
 sysctl -w vm.max_map_count=262144
@@ -156,6 +163,3 @@ docker run --rm -ti --name=ctop -v /var/run/docker.sock:/var/run/docker.sock qua
 
 #### Check size occupied by containers and their volumes
 Use [the script](https://github.com/vitaliykobrin/useful-scripts/blob/master/scripts/docker-size.sh)
-
-#### Uninstall Docker
-https://stackoverflow.com/questions/31313497/how-to-remove-docker-installed-using-wget  

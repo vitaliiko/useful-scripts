@@ -1,4 +1,4 @@
-### Git
+## Git
 
 #### Checkout to previous branch
 ```

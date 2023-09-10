@@ -1,3 +1,5 @@
+## Sed
+
 #### Replace first line with string
 ```
 sed -i "1 s/.*/String to be inserted/" file.txt

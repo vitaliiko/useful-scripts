@@ -1,4 +1,4 @@
-### k8s
+## k8s
 
 [Kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
@@ -6,7 +6,7 @@
 
 [Kubernetes API Reference Docs](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.27/)
 
-#### Get resources
+### Get resources
 To get all pods, deployments and services
 ```
 kubectl get pods,svc,deploy
@@ -44,7 +44,7 @@ To see info about a resource
 kubectl explain <resource>
 ```
 
-#### Settings overview
+### Settings overview
 To view all k8s resources, their short names and versions
 ```
 kubectl api-resources
@@ -79,7 +79,7 @@ To check kube-apiserver status
 kubectl get pod -n kube-system
 ```
 
-#### Search for resources
+### Search for resources
 To get pods which are in prod or in dev envs
 ```
 kubectl get pods --selector env=prod --selector env=dev
@@ -95,7 +95,7 @@ To count resources
 kubectl get pods --selector env=prod --no-headers | wc -l
 ```
 
-#### Context & Namespace
+### Context & Namespace
 To set default context
 ```
 kubectl config use-context dev
@@ -112,7 +112,7 @@ kubectl config set-context contextname --namespace=dev
 kubectl config set-context --current --namespace=dev
 ```
 
-#### Monitoring
+### Monitoring
 To see CPU and memory consumption by pods
 ```
 kubectl top pod
@@ -123,7 +123,7 @@ To get definitions for metrics service
  git clone https://github.com/kodekloudhub/kubernetes-metrics-server.git
 ```
 
-#### Inside a container
+### Inside a container
 To get a shell of a container 
 ```
 kubectl exec -it podname -- /bin/bash
@@ -139,7 +139,7 @@ To get a list of container's environment variables
 kubectl exec podname -- printenv
 ```
 
-#### Pod / container logs
+### Pod / container logs
 Get current logs of a pod
 ```
 kubectl logs nginx
@@ -337,7 +337,7 @@ To copy files to node
 scp /folder/* nodename:/folder
 ```
 
-#### Check Access
+### Check Access
 ```
 kubectl auth can-i create deployments
 kubectl auth can-i delete nodes

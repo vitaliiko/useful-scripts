@@ -1,3 +1,5 @@
+## Wget
+
 #### Download and set the output file name
 ```
 wget -O filename.zip http://www.domain.com/filename.zip

@@ -1,3 +1,5 @@
+## Xargs
+
 #### Call xargs for all outputs one by one
 ```
 cat file_with_argumantes.txt | xargs -n1 echo

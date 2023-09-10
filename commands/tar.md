@@ -1,4 +1,4 @@
-### Tar
+## Tar
 
 #### Compress directory
 ```

@@ -1,6 +1,6 @@
-### ArangoDB
+## ArangoDB
 
-#### Import data from tsv file
+### Import data from tsv file
 ```
 arangoimport \
         --server.database "<database>" \
@@ -10,7 +10,7 @@ arangoimport \
         --on-duplicate "ignore"
 ```
 
-#### Create dump
+### Create dump
 ```
 arangodump \
         --server.username <user_name> \
@@ -19,7 +19,7 @@ arangodump \
         --output-directory "<target_directory>"
 ```
 
-#### Restore dump
+### Restore dump
 ```
 arangorestore \
         --server.username <user_name> \
@@ -29,7 +29,7 @@ arangorestore \
         --input-directory "<dump_location>"
 ```
 
-#### Run ArangoDB with minimum resources consumption
+### Run ArangoDB with minimum resources consumption
 ```
 arangod --log.level queries=debug \
         --server.descriptors-minimum 128 \

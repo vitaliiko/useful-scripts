@@ -1,3 +1,5 @@
+## Gzip
+
 #### Compress file(s)
 ```
 gzip file.txt

@@ -1,3 +1,5 @@
+## Power Shell
+
 #### To stop all process with name
 ```
 Stop-Process -Name "java" -Force
