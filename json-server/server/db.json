@@ -1,0 +1,36 @@
+{
+    "rock_songs": [
+        {
+            "title": "Africa",
+            "band": "Toto"
+        },
+        {
+            "title": "Fkj",
+            "band": "Moments"
+        }
+    ],
+    "rock_bands": [
+        {
+            "name": "Toto"
+        },
+        {
+            "name": "Boston"
+        }
+    ],
+    "classical_pieces": [
+        {
+            "title": "Prelude in C Major"
+        },
+        {
+            "tilte": "Toccata and fugue in d minor"
+        }
+    ],
+    "classical_artists": [
+        {
+            "name": "Alexander Scriabin"
+        },
+        {
+            "name": "Johann Sebastian Bach"
+        }
+    ]
+}
