@@ -11,14 +11,13 @@
           "application/json"
         ]
       },
-      "body": 
-        {
-          "id": 1,
-          "name": "Tom",
-          "photoUrls": [
-            "https://via.placeholder.com/150"
-          ]
-        }
+      "body": {
+        "id": 1,
+        "name": "Tom",
+        "photoUrls": [
+          "https://via.placeholder.com/150"
+        ]
+      }
     }
   },
   {
@@ -46,6 +45,27 @@
       },
       "body": {
         "message": "Lucky"
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "path": "/my/pets/{id}",
+      "method": "GET",
+      "pathParameters": {
+        "id": ["[0-9]+"]
+      }
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "content-type": [
+          "application/json"
+        ]
+      },
+      "body": {
+        "id": 123,
+        "name": "Tom"
       }
     }
   }
