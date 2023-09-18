@@ -1,0 +1,52 @@
+[
+  {
+    "httpRequest": {
+      "specUrlOrPayload": "https://petstore.swagger.io/v2/swagger.json",
+      "operationId": "getPetById"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "content-type": [
+          "application/json"
+        ]
+      },
+      "body": 
+        {
+          "id": 1,
+          "name": "Tom",
+          "photoUrls": [
+            "https://via.placeholder.com/150"
+          ]
+        }
+    }
+  },
+  {
+    "httpRequest": {
+      "specUrlOrPayload": "https://petstore.swagger.io/v2/swagger.json",
+      "operationId": "addPet"
+    },
+    "httpResponseTemplate": {
+      "template": "if (request.method === \"POST\" && request.path === \"/pet\") return { statusCode: 200, headers: { \"content-type\": [\"application/json\"] }, body: {\"id\":2, \"name\":request.body.json.name, \"photoUrls\":request.body.json.photoUrls} };",
+      "templateType": "JAVASCRIPT",
+      "delay": {"timeUnit": "SECONDS", "value": 2}
+    }
+  },
+  {
+    "httpRequest": {
+      "path": "/pet",
+      "method": "GET"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "content-type": [
+          "application/json"
+        ]
+      },
+      "body": {
+        "message": "Lucky"
+      }
+    }
+  }
+]
