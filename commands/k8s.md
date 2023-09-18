@@ -139,6 +139,16 @@ To get a list of container's environment variables
 kubectl exec podname -- printenv
 ```
 
+To copy files to container
+```
+kubectl cp /source_folder/file.txt podname:target_folder/ -c containername
+```
+
+To copy files from container
+```
+kubectl cp podname:sourece_folder/file.txt /target_folder -c containername
+```
+
 ### Pod / container logs
 Get current logs of a pod
 ```

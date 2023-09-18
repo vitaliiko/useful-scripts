@@ -10,13 +10,14 @@ arangoimport \
         --on-duplicate "ignore"
 ```
 
-### Create dump
+### Create dump and compress
 ```
 arangodump \
         --server.username <user_name> \
         --server.password <password> \
         --server.database <db_name> \
-        --output-directory "<target_directory>"
+        --output-directory "<target_directory>" \
+        --compress-output
 ```
 
 ### Restore dump
