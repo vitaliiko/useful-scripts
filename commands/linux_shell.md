@@ -22,7 +22,7 @@ cd ${0%/*}
 date '+%Y-%m-%d %H:%M:%S'
 ```
 
-#### Get uniq set of lines
+#### Get unique set of lines
 ```
 <input> | sort | uniq
 or 
@@ -37,6 +37,11 @@ or
 #### Sort lines of numbers in reverse order
 ```
 <input> | sort -rn
+```
+
+#### Get random set of characters
+```
+tr -dc a-z0-9 < /dev/urandom | head -c 10
 ```
 
 #### Kill all processes with a certain name

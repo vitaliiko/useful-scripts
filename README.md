@@ -17,6 +17,7 @@
 * [Gradle](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gradle.md)
 * [Grep](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/grep.md)
 * [Gzip](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gzip.md)
+* [Helm](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/helm.md)
 * [JQ](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/jq.md)
 * [k8s](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/k8s.md)
 * [minikube](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/minikube.md)
