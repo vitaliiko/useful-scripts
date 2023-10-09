@@ -1,5 +1,10 @@
 ## Helm
 
+To search for package
+```
+helm search repo "reponame"
+```
+
 To install package
 ```
 helm install release-name bitnami/nginx
@@ -33,4 +38,28 @@ helm upgrade nginx01 --set=service.port=8080 bitnami/nginx --wait --timeout 10s
 To create an application
 ```
 helm create app-name
+```
+
+To update dependencies
+```
+helm dependency update
+helm dependency build .
+```
+
+### Custom package
+To create a package
+```
+helm package --destination target-dir source-dir
+helm repo index target-dir
+```
+
+To publish a package
+```
+helm repo add reponame http://repohost
+``` 
+
+To update repo
+```
+helm repo index target-dir
+helm repo update 
 ```
