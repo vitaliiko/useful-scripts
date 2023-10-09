@@ -5,6 +5,14 @@ networks:
 
 services:
 
+  # Apache web server
+  apache:
+    image: httpd
+    ports:
+      - 80:80
+    volumes:
+      - ./mockserver:/usr/local/apache2/htdocs/
+
   # MySQL
   mysql:
     image: mysql:8.0.31
