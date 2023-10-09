@@ -2,6 +2,11 @@
 
 ### S3
 
+#### Create a bucket
+```
+aws s3 mb s3://bucketname
+```
+
 #### Upload file to S3
 ```
 aws s3api put-object --bucket ${bucket_name} --key ${object_name} --body ${file_name}
@@ -26,7 +31,12 @@ aws s3 cp s3://<bucket_name>/<path_to_dir> <path_on_local_machine> --recursive
 aws s3 sync /some-folder s3://bucket-name/folder
 ```
 
-#### Get object modificaiton date
+#### Set the website configuration for a bucket
+```
+aws s3 website s3://bucketname --index-document index.html --error-document error.html
+```
+
+#### Get object's modificaiton date
 ```
 aws s3api head-object --bucket ${bucket_name} --key ${object_name} | grep LastModified | awk -F'[""]' '{print $4}'
 ```
@@ -48,6 +58,11 @@ echo files_to_remove.txt | xargs -n1 aws s3 rm
 #### Get name of latest uploaded file to a bucket
 ```
 aws s3 ls s3://bucket-name/folder --recursive | sort | tail -n 1 | awk '{print $4}'
+```
+
+#### Update bucket's policy
+```
+aws s3api put-bucket-policy --bucket bucketname --policy file://policy.json
 ```
 
 ### EC2
