@@ -12,6 +12,11 @@ To install dependencies
 helm dependency update .
 ```
 
+To build dependencies (fill charts/ folder with all packages listed in lock file)
+```
+helm dependency build .
+```
+
 ### Install and upgrade
 
 To search for package
