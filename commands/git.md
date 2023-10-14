@@ -45,6 +45,16 @@ git shortlog -s -n --all --no-merges
 git rev-parse HEAD | head -c 7
 ```
 
+#### Get first commit hash
+```
+git rev-list --max-parents=0 HEAD
+```
+
+#### Get first commit
+```
+git log $(git rev-list --max-parents=0 HEAD)
+```
+
 #### Undo git stash pop that results in merge conflict
 ```
 git reset HEAD .
@@ -153,6 +163,11 @@ git update-index --chmod=+x gradlew
 #### Change commit author
 ```
 git commit --amend --author="Author Name <email@address.com>"
+```
+
+#### Do rebase but keep original commit date
+```
+git rebase -i --committer-date-is-author-date hash
 ```
 
 #### Remove files from commit
