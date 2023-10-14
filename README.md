@@ -10,6 +10,7 @@
 * [Docker](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/docker.md)
 * [File operations](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/file_operations.md)
 * [File testing](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/file_testing_in_bash.jpg)
+* [find](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/find.md)
 * [forgit](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/forgit.md)
 * [Git](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/git.md)
 * [Google Cloud](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gcloud.md)

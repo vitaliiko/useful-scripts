@@ -5,9 +5,9 @@
 cat file_with_argumantes.txt | xargs -n1 echo
 ```
 
-#### Rename all files or subdirectories in a particular directory to lowercase
+#### Rename all files or sub-directories in a particular directory to lowercase
 ```
-find Documnets -depth | xargs -n 1 rename -v 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \;
+find Documents -depth | xargs -n 1 rename -v 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \;
 ```
 
 #### Delete all files within a directory except one or few files with a given extension

@@ -111,12 +111,7 @@ envsubst '$VAR1 $VAR2' < "config.env.sample" > "config.env"
 vm.max_map_count=262144
 ```
 
-#### Exclude directories from file list
-```
-find . -maxdepth 1 -not -type d
-```
-
-#### Sort lines by amount of occurances
+#### Sort lines by amount of occurrences
 ```
 cat ids.txt | sort | uniq -c | sort -r -g
 ```
@@ -126,7 +121,7 @@ cat ids.txt | sort | uniq -c | sort -r -g
 <input> | awk -F, '{print $1}' | sort | uniq -c | awk '{if ($1 > 1) print $1" "$2}' | sort -rg
 ```
 
-#### To analize directories space consumpsion
+#### To analyze directories space consumption
 ```
 sudo du -shx /* | sort -h
 ```
@@ -139,10 +134,6 @@ sudo du -shx /* | sort -h
 #### Resolve `/bin/bash^M: bad interpreter` issue
 ```
 sed -i -e 's/\r$//' your_script.sh
-```
-#### Find all files with a certain extention in a directory recurcively
-```
- find . | grep \\.txt
 ```
 
 #### Check access to some endpoint

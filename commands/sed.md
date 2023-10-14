@@ -89,8 +89,3 @@ sed -i 1s/^/word/ file.txt
 ```
 sed -i $'s/\r$//' file.txt
 ```
-
-#### Replace occurrences of a string in multiple files
-```
-find . -type f -exec sed -i 's/string_to_replace/new_string/g' {}
-``` 
