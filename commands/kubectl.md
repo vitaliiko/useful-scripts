@@ -1,4 +1,4 @@
-## k8s
+## kubectl
 
 [Kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
