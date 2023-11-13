@@ -36,7 +36,7 @@ cat users.json | jq '.users[] | select(.name != "Jack")'
 
 Ends with a string
 ```
-cat users.json | jq '.users[] | select(.name // "" | endswith("hn"))'
+cat users.json | jq '.users[] | select(.address.street // "" | endswith("ave"))'
 ```
 // "" is to provide empty string as a default value
 
@@ -45,9 +45,14 @@ Matches regex
 cat users.json | jq '.users[] | select(.name | match("pattern"))'
 ```
 
+Matches multiple conditions
+```
+cat users.json | jq '.users[] | select((.address.country == "US") and (.age > 25))'
+```
+
 To find all inner objects where certain field does not exist
 ```
-cat users.json | jq '.users[] | select(has("age") | not)'
+cat users.json | jq '.users[] | select(has("address") | not)'
 ```
 
 #### Statistic
@@ -62,11 +67,16 @@ cat users.json | jq '.users[] | select(.age > 25).name' | sort | uniq -c | sort 
   "users": [
     {
       "id": 1,
-      "name": "John"
+      "name": "John",
+      "age": 30,
+      "address": {
+        "country": "US"
+      }
     },
     {
       "id": 2,
-      "name": "Jack"
+      "name": "Jack",
+      "age": 29
     }
   ]
 }
