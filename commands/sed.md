@@ -45,6 +45,11 @@ sed s/string_to_replace/new_string/g file.txt
 sed s,placeholder,http://example.com,g file.txt
 ```
 
+#### Replace multiple strings with the other one
+```
+sed s/\(string1\|string2\)/new_string/g file.txt
+```
+
 #### Insert line after the match
 ```
 sed '/^key=.*/a after=value' file.txt
