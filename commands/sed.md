@@ -2,7 +2,17 @@
 
 #### Replace first line with string
 ```
+sed "1 s/.*/String to be inserted/" file.txt
+```
+
+#### Replace first line with string and write to the input file
+```
 sed -i "1 s/.*/String to be inserted/" file.txt
+```
+
+#### Replace first line with string and write to the input file saving backup
+```
+sed -i'.bkp' "1 s/.*/String to be inserted/" file.txt
 ```
 
 #### Remove first line of a file
@@ -48,6 +58,11 @@ sed s,placeholder,http://example.com,g file.txt
 #### Replace multiple strings with the other one
 ```
 sed s/\(string1\|string2\)/new_string/g file.txt
+```
+
+#### Fully replace line started with
+```
+sed -i -e "s/\bstring[^ ]*/replacement/g" file.txt
 ```
 
 #### Insert line after the match
