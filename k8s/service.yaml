@@ -26,3 +26,16 @@ spec:
   - port: 8081
   selector:
     name: myapp
+---
+# Headless service
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-web-app
+spec:
+  selector:
+    app: my-web-app
+  clusterIP: None
+  ports:
+    port: 80
+    targetPort: 8080
