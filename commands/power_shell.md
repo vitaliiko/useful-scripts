@@ -1,7 +1,6 @@
 ## PowerShell
 
 ### Processes
-
 To stop all process with name
 ```shell
 Stop-Process -Name "java" -Force
@@ -19,7 +18,6 @@ Stop-Process -Id <ID>
 ```
 
 ### Wi-Fi networks
-
 To see a list of all Wi-Fi networks ever connected
 ```shell
 netsh wlan show profile
@@ -36,7 +34,6 @@ netsh wlan show profile "network_name" key=clear
 ```
 
 ### Zip archives
-
 Zip files
 ```shell
 Compress-Archive -Path C:\SOURCE\* -CompressionLevel Optimal -DestinationPath C:\DESTINATION\FILE.zip

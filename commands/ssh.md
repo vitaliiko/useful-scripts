@@ -1,7 +1,6 @@
 ## SSH
 
 ### To generate SSH key do the following
-
 1. Run `ssh-keygen` to generate a key
 1. Run `chmod 400 ~/.ssh/id_rsa` to prevent key modifications
 1. Run ``eval `ssh-agent` `` to start the ssh agent
@@ -14,7 +13,8 @@
 ssh-keygen -t rsa -m PEM
 ```
 
-### Copy file with scp
+### SCP
+Copy file with scp
 ```bash
 scp input.txt user@ip_adress:/home/user
 ```
@@ -23,12 +23,13 @@ or
 scp -i key.pem input.txt user@ip_adress:/home/user
 ```
 
-### Recursively send folder via ssh with excludings
-```bash
-rsync -rv -e "ssh -l user" --exclude 'node_modules' --exclude '*.log' ./folder ip_adress:/home/user
-```
-
-### Use scp with password in a script
+Use scp with password in a script
 ```bash
 sshpass -p $password scp $source $destination
+```
+
+### RSYNC
+Recursively send folder via ssh but excluding some files
+```bash
+rsync -rv -e "ssh -l user" --exclude 'node_modules' --exclude '*.log' ./folder ip_adress:/home/user
 ```

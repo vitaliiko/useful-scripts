@@ -74,7 +74,7 @@ To view release history
 helm history release-name
 ```
 
-To rollback to one of the previous revisions
+To do rollback to one of the previous revisions
 ```bash
 helm rollback release-name revision-number
 e.g.
