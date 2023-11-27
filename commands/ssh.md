@@ -9,26 +9,26 @@
 1. Optionally. Set up [config](https://github.com/vitaliykobrin/useful-scripts/blob/master/configs/ssh-config.yml) for multiple keys usage
 1. Run `chmod 600 ~/.ssh/config` to allow read/write only to an owner
 
-### To generage RSA SSH key
-```
+### To generate RSA SSH key
+```bash
 ssh-keygen -t rsa -m PEM
 ```
 
 ### Copy file with scp
-```
+```bash
 scp input.txt user@ip_adress:/home/user
 ```
 or 
-```
+```bash
 scp -i key.pem input.txt user@ip_adress:/home/user
 ```
 
 ### Recursively send folder via ssh with excludings
-```
+```bash
 rsync -rv -e "ssh -l user" --exclude 'node_modules' --exclude '*.log' ./folder ip_adress:/home/user
 ```
 
 ### Use scp with password in a script
-```
+```bash
 sshpass -p $password scp $source $destination
 ```

@@ -18,7 +18,7 @@ At 3:00
 To set up background cron job on Linux
 1. `crontab -e`
 1. Add line with schedule and script to be performed
-```
+```bash
 @weekly home/user/script.sh >> /home/user/logs.txt
 ```
 This will run script weekly and write its output to a text file

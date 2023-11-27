@@ -1,7 +1,7 @@
 ## ArangoDB
 
 ### Import data from tsv file
-```
+```bash
 arangoimport \
         --server.database "<database>" \
         --file "<file name>" \
@@ -11,7 +11,7 @@ arangoimport \
 ```
 
 ### Create dump and compress
-```
+```bash
 arangodump \
         --server.username <user_name> \
         --server.password <password> \
@@ -21,7 +21,7 @@ arangodump \
 ```
 
 ### Restore dump
-```
+```bash
 arangorestore \
         --server.username <user_name> \
         --server.password <password> \
@@ -31,7 +31,7 @@ arangorestore \
 ```
 
 ### Run ArangoDB with minimum resources consumption
-```
+```bash
 arangod --log.level queries=debug \
         --server.descriptors-minimum 128 \
         --rocksdb.max-total-wal-size 1024000 \
