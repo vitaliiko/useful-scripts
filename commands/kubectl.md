@@ -175,6 +175,11 @@ Show all logs from pod nginx written in the last hour
 kubectl logs --since=1h nginx
 ```
 
+Job logs
+```
+kubectl logs job.batch/job-name
+```
+
 ### Create/update resources
 
 #### Pod

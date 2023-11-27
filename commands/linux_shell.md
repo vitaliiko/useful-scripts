@@ -140,3 +140,8 @@ sed -i -e 's/\r$//' your_script.sh
 ```
 nc -v -z -w 2 localhost 80
 ```
+
+#### Print the exit status of the last executed command
+```
+echo $?
+```
