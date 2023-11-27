@@ -11,7 +11,7 @@ spec:
       containers:
       - name: myapp-container
         image: my-app-image
-      command:
+        command:
         - sh
         - -c
         - echo Job is working
