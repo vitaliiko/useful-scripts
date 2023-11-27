@@ -1,15 +1,11 @@
 ## Docker
 
-### Install Docker and docker-compose
-Use [the script](https://github.com/vitaliykobrin/useful-scripts/blob/master/scripts/install-docker.sh)
-
 ### Login
 ```bash
 docker login -u $username -p $password
 ```
 
 ### Clean up
-
 Remove old non-running containers
 ```bash
 docker ps --filter "status=exited" | grep 'weeks ago' | awk '{print $1}' | xargs --no-run-if-empty docker rm  
@@ -23,9 +19,9 @@ docker images | grep 'months ago' | awk '{print $3}' | xargs docker rmi
 Remove dangling images
 ```bash
 docker rmi $(docker images -f "dangling=true" -q)  
-
+```
 or 
-
+```bash
 docker image prune
 ```
 
@@ -60,7 +56,6 @@ docker rmi $(docker images -q ubuntu)
 ```
 
 ### Images
-
 Build an image
 ```bash
 docker build -t image-name .
@@ -72,7 +67,6 @@ docker build -t image-name . --no-cache
 ```
 
 ### Containers
-
 Run container and mount current folder to it
 ```bash
 docker run -it --rm -w /app -v $(pwd):/app image bash
@@ -114,8 +108,7 @@ docker cp CONTAINER:SRC_PATH DEST_PATH
 docker cp SRC_PATH CONTAINER:DEST_PATH
 ```
 
-#### Inspect a container
-
+### Inspect a container
 Inspect mounts of a container
 ```bash
 docker inspect -f "{{ .Mounts }}" <container>
@@ -146,8 +139,7 @@ Get ICC setting for a specific network
 docker inspect -f '{{index .Options "com.docker.network.bridge.enable_icc"}}' <network>
 ```
 
-#### Logs
-
+### Logs
 See last logs
 ```bash
 docker logs --since 30s -f <container_name_or_id>
@@ -166,7 +158,6 @@ echo "" > $(docker inspect --format='{{.LogPath}}' <container_name_or_id>)
 ```
 
 ### Tools
-
 #### Resolve `vm.max_map_count` issue in Windows
 ```bash
 wsl -d docker-desktop
@@ -177,6 +168,3 @@ sysctl -w vm.max_map_count=262144
 ```bash
 docker run --rm -ti --name=ctop -v /var/run/docker.sock:/var/run/docker.sock quay.io/vektorlab/ctop:latest
 ```
-
-#### Check size occupied by containers and their volumes
-Use [the script](https://github.com/vitaliykobrin/useful-scripts/blob/master/scripts/docker-size.sh)
