@@ -33,6 +33,16 @@ Change column delimiters from `,` to `|` considering quotes
 cat file.csv | perl -pe 's/,(?![\s])/|/g' > file.dat
 ```
 
+Convert CSV to JSON
+```bash
+cat file.csv | python -c 'import csv, json, sys; print(json.dumps([dict(r) for r in csv.DictReader(sys.stdin)]))' > result.json
+```
+
+Convert CSV with specified delimiter to JSON
+```bash
+cat file.csv | python -c 'import csv, json, sys; print(json.dumps([dict(r) for r in csv.DictReader(sys.stdin, delimiter="\t")]))' > result.json
+```
+
 ### Split
 Split file by multiple ones
 ```bash
