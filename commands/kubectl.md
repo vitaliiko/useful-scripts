@@ -214,6 +214,11 @@ To delete all pods with a label
 kubectl delete pod -l label=value
 ```
 
+To delete a pod and skip error if it's missing
+```
+kubectl delete pod --ignore-not-found=true pod-name
+```
+
 #### ReplicaSet
 To scale replicas
 ```bash
