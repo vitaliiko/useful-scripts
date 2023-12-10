@@ -10,7 +10,7 @@ fi
 
 into `.bashrc` and perform `source ~/.bashrc` after each edit of `.bash_aliases`
 
-#### Aliases for this cheat-sheet
+### Aliases for this cheat-sheet
 ```bash
 alias harango='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/arangodb.md'  
 alias hawk='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/awk.md'  
@@ -19,6 +19,7 @@ alias hcron='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts
 alias hcurl='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/curl.md'  
 alias hdb='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/dbms.md'  
 alias hdocker='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/docker.md'  
+alias henv='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/env_vars.md'  
 alias hfile='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/file_operations.md'  
 alias hfind='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/find.md'  
 alias hgc='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/gcloud.md'  
@@ -30,7 +31,8 @@ alias hgzip='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts
 alias hjq='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/jq.md'  
 alias hkube='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/kubectl.md'  
 alias minik='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/minikube.md'  
-alias hsh='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/linux_shell.md'  
+alias hmisc='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/misc.md'  
+alias hnet='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/network.md'  
 alias hpower='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/power_shell.md'  
 alias hsed='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/sed.md'  
 alias hssh='glow https://raw.githubusercontent.com/vitaliykobrin/useful-scripts/master/commands/ssh.md'  
@@ -41,7 +43,7 @@ alias hxargs='glow https://raw.githubusercontent.com/vitaliykobrin/useful-script
 
 [How to install glow](https://github.com/charmbracelet/glow)
 
-#### Useful aliases
+### Useful aliases
 
 ```bash
 alias dc='docker-compose'
@@ -53,8 +55,7 @@ alias gc='gcloud'
 alias runftp='systemctl start vsftpd.service'
 ```
 
-
-#### Git aliases
+### Git aliases
 ```bash
 git config --global alias.co checkout  
 git config --global alias.br branch  

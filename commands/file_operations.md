@@ -22,6 +22,29 @@ Remove lines at the bottom
 cat input.txt | head -n -10 > result.txt
 ```
 
+#### Statistic
+Get unique set of lines
+```bash
+<input> | sort | uniq
+or 
+<input> | sort -u
+```
+
+Count non empty lines
+```bash
+<input> | sed '/^\s*$/d' | wc -l
+```
+
+Sort lines by amount of occurrences
+```bash
+cat ids.txt | sort | uniq -c | sort -r -g
+```
+
+Find rows with duplicates in first column
+```bash
+<input> | awk -F, '{print $1}' | sort | uniq -c | awk '{if ($1 > 1) print $1" "$2}' | sort -rg
+```
+
 ### CSV
 Remove 4th column from CSV file
 ```bash
@@ -112,6 +135,11 @@ head -n1 -q *.txt
 Print column headers of all files but replace each separator with a new line
 ```bash
 head -n1 -q *.dat | sed ':a;N;$!ba;s/\n/\n\n/g' | sed 's/|/\n/g' > columns.txt
+```
+
+Print lines of numbers in reverse order
+```bash
+<input> | sort -rn
 ```
 
 ### Compare
