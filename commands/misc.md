@@ -34,8 +34,12 @@ tr -dc a-z0-9 < /dev/urandom | head -c 10
 
 Uppercase string
 ```bash
-string=some text
-echo ${string^^}
+echo ${$string^^}
+```
+
+Trim white spaces in string
+```bash
+echo $string | tr -d ' '
 ```
 
 Print the exit status of the last executed command
