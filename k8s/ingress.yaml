@@ -8,7 +8,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-  - host: localhos
+  - host: localhost
     http:
       paths:
       - path: /pay

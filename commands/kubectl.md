@@ -39,6 +39,11 @@ To get pod definition
 kubectl get pod podname -o yaml > pod.yaml
 ```
 
+To get pod name by its selector
+```bash
+kubectl get pod --selector="label=value" --output jsonpath='{.items[0].metadata.name}'
+```
+
 To see info about a resource
 ```bash
 kubectl explain <resource>
@@ -93,6 +98,11 @@ kubectl get all --selector env=prod,tier=frontend
 To count resources
 ```bash
 kubectl get pods --selector env=prod --no-headers | wc -l
+```
+
+To display sorted list of pods
+```bash
+kubectl get pods -n cj2 -l cj2job --sort-by=.metadata.creationTimestamp
 ```
 
 ### Context & Namespace
@@ -209,16 +219,6 @@ To delete running pod and re-create it with an updated definition
 kubectl replace --force -f pod.yaml
 ```
 
-To delete all pods with a label
-```bash
-kubectl delete pod -l label=value
-```
-
-To delete a pod and skip error if it's missing
-```
-kubectl delete pod --ignore-not-found=true pod-name
-```
-
 #### ReplicaSet
 To scale replicas
 ```bash
@@ -283,6 +283,11 @@ kubectl expose pod nginx --port=80 --name nginx-service --type=NodePort --dry-ru
 To create a pod with a service
 ```bash
 kubectl run nginx --image nginx --port=80 --expose=true
+```
+
+To forward service's port
+```bash
+kubectl port-forward service-name 8080:service-port
 ```
 
 #### Ingress
@@ -355,6 +360,22 @@ kubectl uncordon nodename
 To copy files to node
 ```bash
 scp /folder/* nodename:/folder
+```
+
+#### Delete resources
+To delete all pods with a label
+```bash
+kubectl delete pod -l label=value
+```
+
+To delete a pod and skip error if it's missing
+```bash
+kubectl delete pod --ignore-not-found=true pod-name
+```
+
+To delete all resources in a certain namespace
+```bash
+kubectl delete all --all -n namespace
 ```
 
 ### Check Access
