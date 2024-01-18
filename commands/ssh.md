@@ -8,6 +8,11 @@
 1. Optionally. Set up [config](https://github.com/vitaliykobrin/useful-scripts/blob/master/configs/ssh-config.yml) for multiple keys usage
 1. Run `chmod 600 ~/.ssh/config` to allow read/write only to an owner
 
+To change SSH key password use
+```bash
+ssh-keygen -p -f ~/.ssh/id_rsa
+```
+
 ### To generate RSA SSH key
 ```bash
 ssh-keygen -t rsa -m PEM
