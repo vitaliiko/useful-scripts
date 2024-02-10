@@ -1,7 +1,7 @@
 ## SSH
 
 ### To generate SSH key do the following
-1. Run `ssh-keygen` to generate a key
+1. Run `ssh-keygen` to generate a key (`ssh-keygen -f ~.ssh/<private_key_file>`)
 1. Run `chmod 400 ~/.ssh/id_rsa` to prevent key modifications
 1. Run ``eval `ssh-agent` `` to start the ssh agent
 1. Run `ssh-add ~/.ssh/<private_key_file>` to prevent password entering each time key is used. (or run ``eval `ssh-agent -s`; ssh-add ~/.ssh/<private_key_file>`` in git shell on Windows)

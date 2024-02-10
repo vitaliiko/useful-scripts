@@ -208,6 +208,18 @@ Use git remote with other SSH port
 git remote add origin ssh://user@host:1234/path/to/git
 ```
 
+Set git user
+```
+git config user.name "username"
+git config user.email "email@email"
+```
+
+Set git user globally
+```
+git config --global user.name "username"
+git config --global user.email "email@email"
+```
+
 Use Sublime as a default editor
 ```bash
 git config --global core.editor "subl -n -w"
