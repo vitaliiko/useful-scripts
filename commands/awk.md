@@ -29,6 +29,11 @@ Filter lines with empty value in a specifid column
 
 ### Conversions
 
+Insert custom variable
+```bash
+awk -v variable="$value" '{print "prefix/"variable"/"$1}'
+```
+
 Split line by custom separator and print second field
 ```bash
 awk -F<separator> '{print $2}' input.txt
