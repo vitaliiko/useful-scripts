@@ -41,6 +41,7 @@
 * [JWT tool](https://github.com/ticarpi/jwt_tool)
 * [A fast web fuzzer](https://github.com/ffuf/ffuf/)
 * [List of HTTP methods](https://github.com/danielmiessler/SecLists/blob/master/Fuzzing/http-request-methods.txt)
+* [Archive](https://archive.is) - To view web pages without sign in
 
 ### AI
 * [AI Tool Master List](https://share-docs.clickup.com/25598832/d/h/rd6vg-14247/0b79ca1dc0f7429/rd6vg-12207)
