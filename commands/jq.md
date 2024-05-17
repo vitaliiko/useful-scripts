@@ -56,6 +56,11 @@ cat users.json | jq '.users[] | select(has("address") | not)'
 ```
 
 #### Statistic
+To count items in array
+```bash
+cat users.json | jq '.users | length'
+```
+
 To count occurrences of a values in a certain field
 ```bash
 cat users.json | jq '.users[] | select(.age > 25).name' | sort | uniq -c | sort -r -g
