@@ -26,3 +26,8 @@ Upgrade Gradle wrapper
 ```bash
 ./gradlew wrapper --gradle-version=7.1
 ```
+
+Get list of all tasks
+```
+gradle -q :tasks --all
+```
