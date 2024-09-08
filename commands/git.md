@@ -40,6 +40,11 @@ git checkout file.txt
 git commit
 ```
 
+Force push but preventing overwrites
+```
+git push --force-with-lease --force-if-includes
+```
+
 ### Move commits
 Move last N commits to a new branch
 ```bash
