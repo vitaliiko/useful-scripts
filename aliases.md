@@ -75,7 +75,7 @@ git config --global alias.aj "add *.java"
 ```  
 Add to `[alias]` section of `.gitconfig` file:  
 ```bash
-ri = "!ri() { git rebase -i HEAD~$1; }; ri" // interactively rebase N last commits   
+ri = "!f() { git rebase -i HEAD~$1; }; f" // interactively rebase N last commits   
 la = "!f() { git config -l | grep alias | cut -c 7-; }; f" // show list of aliases 
 nb = "!f() { git checkout -b feature/$1; }; f" // create new branch and checkout to it 
 fpush = "!f() { git push -u origin $(git rev-parse --abbrev-ref HEAD); }; f" // push current branch for the first time 
