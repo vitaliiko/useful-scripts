@@ -148,6 +148,11 @@ To create patch with changes between commits
 git diff <commit_hash_1> <commit_hash_2> > changes.patch
 ```
 
+To add new files so they are visible in diff
+```
+git add -N <file_name>
+```
+
 To apply patch
 ```bash
 git apply changes.patch
