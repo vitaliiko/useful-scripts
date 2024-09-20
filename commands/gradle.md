@@ -24,7 +24,7 @@ gradle :module:dependencyInsight --dependency log4j
 
 Upgrade Gradle wrapper
 ```bash
-./gradlew wrapper --gradle-version=7.1
+./gradlew wrapper --gradle-version=8.10
 ```
 
 Get list of all tasks
