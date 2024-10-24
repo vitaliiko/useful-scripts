@@ -164,3 +164,9 @@ Display lines that are only in file2 but not in file1
 ```bash
 comm -13 file1.txt file2.txt
 ```
+
+### Misc
+Recursively remove Windows related stuff from all files in directory
+```
+find . -type f -exec dos2unix {} \;
+```
