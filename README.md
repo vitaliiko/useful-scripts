@@ -20,6 +20,7 @@
 * [Grep](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/grep.md)
 * [Gzip](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/gzip.md)
 * [Helm](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/helm.md)
+* [JVM](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/JVM.md)
 * [JQ](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/jq.md)
 * [kubectl](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/kubectl.md)
 * [minikube](https://github.com/vitaliykobrin/useful-scripts/blob/master/commands/minikube.md)
