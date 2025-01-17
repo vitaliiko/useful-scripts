@@ -1,4 +1,3 @@
-version: "3.7"
 services:
   mock_server:
     image: mockserver/mockserver:latest
