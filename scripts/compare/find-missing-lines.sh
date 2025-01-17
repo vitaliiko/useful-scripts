@@ -4,7 +4,7 @@ compare_option=$1
 result_file=result.txt
 
 compare () {
-    diff --new-line-format="" --unchanged-line-format="" --ignore-blank-lines --ignore-space-change $1 $2
+    comm -23 $1 $2
 }
 
 find_missing_lines () {
