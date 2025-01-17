@@ -1,3 +1,4 @@
 .idea
 test
 scripts/formatted_tickets.txt
+.DS_Store
