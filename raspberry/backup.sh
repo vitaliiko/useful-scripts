@@ -16,7 +16,7 @@ BACKUP_DESTINATION="${BACKUP_DIR}/${BACKUP_FILE}"
 SSD_MOUNT="/"  # root of Raspberry Pi OS on SSD
 
 # Create backup (exclude backup destination to avoid recursion)
-sudo tar --exclude='$BACKUP_DESTINATION' -czpf "$BACKUP_DESTINATION" -C "$SSD_MOUNT" .
+sudo tar --exclude='/mnt/sdcard' -czpf "$BACKUP_DESTINATION" -C "$SSD_MOUNT" .
 
 # Output result
 if [ $? -eq 0 ]; then
