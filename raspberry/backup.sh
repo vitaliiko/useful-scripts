@@ -1,19 +1,26 @@
 #!/bin/bash
 
-# Set variables for the source SSD and destination SD card mount point
-SRC_DEV="/boot/firmware"      # Change if your SSD uses another device name
-DEST_PATH="/mnt/sdcard/backups" # Change if your SD card is mounted elsewhere
-BACKUP_FILE="${DEST_PATH}/ssd_backup.img.gz"
+# Default backup folder
+BACKUP_DIR="/mnt/sdcard/backups"
+# Default backup file name
+BACKUP_FILE="os_backup.tar.gz"
 
-# Check destination exists
-if [ ! -d "$DEST_PATH" ]; then
-  echo "Destination path $DEST_PATH does not exist!"
-  exit 1
+# If a parameter is given, use it as backup file name
+if [ ! -z "$1" ]; then
+  BACKUP_FILE="$1"
 fi
 
-# Create backup (compressed, overwrites previous)
-sudo dd if="$SRC_DEV" bs=4M status=progress | gzip -c > "$BACKUP_FILE"
+BACKUP_DESTINATION="${BACKUP_DIR}/${BACKUP_FILE}"
 
-# Sync filesystems before exit
-sync
-echo "Backup complete: $BACKUP_FILE"
+# Variables
+SSD_MOUNT="/"  # root of Raspberry Pi OS on SSD
+
+# Create backup (exclude backup destination to avoid recursion)
+sudo tar --exclude='$BACKUP_FILE' -czpf "$BACKUP_DESTINATION" -C "$SSD_MOUNT" .
+
+# Output result
+if [ $? -eq 0 ]; then
+  echo "Backup created successfully: $BACKUP_FILE"
+else
+  echo "Backup creation failed!"
+fi
