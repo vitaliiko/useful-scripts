@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set variables for the source SSD and destination SD card mount point
-SRC_DEV="nvme0n1"      # Change if your SSD uses another device name
+SRC_DEV="/boot/firmware"      # Change if your SSD uses another device name
 DEST_PATH="/mnt/sdcard/backups" # Change if your SD card is mounted elsewhere
 BACKUP_FILE="${DEST_PATH}/ssd_backup.img.gz"
 
