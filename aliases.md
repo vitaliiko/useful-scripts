@@ -64,7 +64,8 @@ git config --global alias.cm commit
 git config --global alias.st status  
 git config --global alias.cp cherry-pick  
   
-git config --global alias.ll "log --oneline --decorate" 
+git config --global alias.ll "log --oneline --decorate"
+git config --global alias.cmm '!f() { git commit -m "$*"; }; f'
 git config --global alias.amend "commit --amend"  
 git config --global alias.append "commit --amend --no-edit"  
 git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"  
