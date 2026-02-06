@@ -3,3 +3,7 @@ test
 scripts/formatted_tickets.txt
 scripts/result.txt
 .DS_Store
+
+scripts/transcribe/*
+!scripts/transcribe/
+!scripts/transcribe/transcribe.sh
