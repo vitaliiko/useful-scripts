@@ -4,9 +4,11 @@ scripts/formatted_tickets.txt
 scripts/result.txt
 .DS_Store
 
-scripts/transcribe/*
-!scripts/transcribe/
-!scripts/transcribe/transcribe.sh
+scripts/transcribe/input/*
+scripts/transcribe/output/*
+scripts/transcribe/*.bin
+!scripts/transcribe/input/
+!scripts/transcribe/input/.gitkeep
 
 scripts/domria/downloads/
 
