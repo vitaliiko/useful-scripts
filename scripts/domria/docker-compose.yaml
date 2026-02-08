@@ -1,0 +1,9 @@
+services:
+  image-downloader:
+    build: .
+    container_name: image-downloader
+    volumes:
+      - ./downloads:/app/downloads
+    env_file:
+      - .env
+    restart: "no"
