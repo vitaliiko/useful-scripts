@@ -41,7 +41,8 @@ git config --global alias.last 'log -1 HEAD'
 git config --global alias.who "shortlog -n -s --no-merges"  
 git config --global alias.undo "reset HEAD~1"  
 git config --global alias.undom = "reset --hard HEAD~1"  
-git config --global alias.force "push --force-with-lease --force-if-includes"  
+git config --global alias.force "push --force-with-lease --force-if-includes"
+git config --global alias.ldiff "diff HEAD~1 HEAD"  
 ```  
 Add to `[alias]` section of `.gitconfig` file:  
 ```bash
